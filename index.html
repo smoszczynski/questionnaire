@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/uniform.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div class="TTWForm-container">
+     
+     
+     <div id="form-title" class="form-title field">
+          <h2>
+               Fragebogen
+          </h2>
+     </div>
+     
+     
+     <form action="process_form.php" class="TTWForm" method="post" novalidate="">
+          
+          
+          <div id="field6-container" class="field radio-group required f_75">
+               <label for="field6-1">
+                    Wunschtermin der Anreise Ihrer Betreuungskraft
+               </label>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="wtermin" id="field6-1" value="Innerhalb 4 Werktage">
+                    <span class="option-title">
+                         Innerhalb 4 Werktage
+                    </span>
+               </div>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="wtermin" id="field6-2" value="Bis 7 Werktage">
+                    <span class="option-title">
+                         Bis 7 Werktage
+                    </span>
+               </div>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="wtermin" id="field6-3" value="Wunschtermin eintragen">
+                    <span class="option-title">
+                         Wunschtermin eintragen
+                    </span>
+               </div>
+          </div>
+          
+          
+          <div id="field7-container" class="field f_50">
+               <label for="field7">
+                    Ab dem (Datum)
+               </label>
+               <input class="ttw-date date" id="field7" maxlength="524288" name="betreuung_ab"
+               required="" size="20" tabindex="0" title="">
+          </div>
+          
+          
+          <div id="field10-container" class="field radio-group required f_25">
+               <label for="field10-1">
+                    Betreuungsdauer
+               </label>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="bdauer" id="field10-1" value="Unbegrenzt">
+                    <span class="option-title">
+                         Unbegrenzt
+                    </span>
+               </div>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="bdauer" id="field10-2" value="Bis">
+                    <span class="option-title">
+                         Bis
+                    </span>
+               </div>
+          </div>
+          
+          
+          <div id="field11-container" class="field f_50">
+               <label for="field11">
+                    Bis zum (Datum)
+               </label>
+               <input class="ttw-date date" id="field11" maxlength="524288" name="betreuung_bis"
+               required="" size="20" tabindex="0" title="">
+          </div>
+          
+          
+          <div id="field12-container" class="field radio-group required f_25">
+               <label for="field12-1">
+                    Anrede
+               </label>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="anrede_klient" id="field12-1" value="Herr">
+                    <span class="option-title">
+                         Herr
+                    </span>
+               </div>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="anrede_klient" id="field12-2" value="Frau">
+                    <span class="option-title">
+                         Frau
+                    </span>
+               </div>
+          </div>
+          
+          
+          <div id="field13-container" class="field f_75">
+               <label for="field13">
+                    Vorname
+               </label>
+               <input type="text" name="vname_klient" id="field13" required="required">
+          </div>
+          
+          
+          <div id="field14-container" class="field f_75">
+               <label for="field14">
+                    Nachname
+               </label>
+               <input type="text" name="nname_klient" id="field14" required="required">
+          </div>
+          
+          
+          <div id="field15-container" class="field f_100">
+               <label for="field15">
+                    Straße
+               </label>
+               <input type="text" name="str_klient" id="field15" required="required">
+          </div>
+          
+          
+          <div id="field16-container" class="field f_25">
+               <label for="field16">
+                    Hausnummer
+               </label>
+               <input type="text" name="hnr_klient" id="field16" required="required">
+          </div>
+          
+          
+          <div id="field17-container" class="field f_100">
+               <label for="field17">
+                    Adresszusatz
+               </label>
+               <input type="text" name="azusatz_klient" id="field17" required="required">
+          </div>
+          
+          
+          <div id="field18-container" class="field f_25">
+               <label for="field18">
+                    PLZ
+               </label>
+               <input type="number" name="plz_klient" id="field18" required="required">
+          </div>
+          
+          
+          <div id="field19-container" class="field f_75">
+               <label for="field19">
+                    Ort
+               </label>
+               <input type="text" name="ort_klient" id="field19" required="required">
+          </div>
+          
+          
+          <div id="field20-container" class="field f_50">
+               <label for="field20">
+                    Telefon (Festnetz mit vorwahl)
+               </label>
+               <input type="number" name="tel_klient" id="field20" required="required">
+          </div>
+          
+          
+          <div id="field21-container" class="field f_50">
+               <label for="field21">
+                    Telefon (Mobil)
+               </label>
+               <input type="number" name="tel_mob_klient" id="field21" required="required">
+          </div>
+          
+          
+          <div id="field22-container" class="field f_50">
+               <label for="field22">
+                    Geburtsdatum
+               </label>
+               <input class="ttw-date date" id="field22" maxlength="524288" name="gdatum"
+               required="" size="20" tabindex="0" title="">
+          </div>
+          
+          
+          <div id="field23-container" class="field f_25">
+               <label for="field23">
+                    Größe (in cm)
+               </label>
+               <input type="text" name="groesse" id="field23" required="required">
+          </div>
+          
+          
+          <div id="field24-container" class="field f_25">
+               <label for="field24">
+                    Gewicht (in kg)
+               </label>
+               <input type="text" name="gewicht" id="field24" required="required">
+          </div>
+          
+          
+          <div id="field26-container" class="field radio-group required f_50">
+               <label for="field26-1">
+                    Wohnt der Patient allein?
+               </label>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="allein_klient" id="field26-1" value="Ja">
+                    <span class="option-title">
+                         Ja
+                    </span>
+               </div>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="allein_klient" id="field26-2" value="Nein">
+                    <span class="option-title">
+                         Nein
+                    </span>
+               </div>
+          </div>
+          
+          
+          <div id="field28-container" class="field f_50">
+               <label for="field28">
+                    Anzahl an Personen im Haushalt
+               </label>
+               <input type="text" name="anzahl_per" id="field28" required="required">
+          </div>
+          
+          
+          <div id="field27-container" class="field radio-group required f_75">
+               <label for="field27-1">
+                    Pflegebedürftigkeit der anderen Person/en
+               </label>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="pbeduerftigkeit" id="field27-1" value="Ja">
+                    <span class="option-title">
+                         Ja
+                    </span>
+               </div>
+               
+               
+               <div class="option clearfix">
+                    <input type="radio" name="pbeduerftigkeit" id="field27-2" value="Nein">
+                    <span class="option-title">
+                         Nein
+                    </span>
+               </div>
+          </div>
+     </form>
+</div>
+
+</body>
+</html>
