@@ -421,6 +421,8 @@ a.caldisabled {
 
 
 
+
+
 #qLeftCol {
     background-color: lightgreen;
     width: 300px;
@@ -432,4 +434,16 @@ a.caldisabled {
     background-color: lightblue;
     margin-left: 350px;
     width: 300px;
+}
+
+
+
+.qDescriptionListTitle {
+    font-family: verdana;
+    color: #525252;
+}
+
+#qTitle {
+    font-family: verdana;
+    color: black;
 }
