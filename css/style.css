@@ -423,17 +423,17 @@ a.caldisabled {
 
 
 
-#qLeftCol {
+.qLeftCol {
     background-color: lightgreen;
-    width: 300px;
+    width: 500px;
     float: left;
 
 }
 
-#qRightCol {
+.qRightCol {
     background-color: lightblue;
-    margin-left: 350px;
-    width: 300px;
+    margin-left: 550px;
+    width: 500px;
 }
 
 
@@ -443,7 +443,16 @@ a.caldisabled {
     color: #525252;
 }
 
-#qTitle {
+.qTitle {
     font-family: verdana;
     color: black;
+}
+
+.qInputText input {
+    width: 250px;
+    height: 20px;
+}
+
+.qDescriptionListTitle {
+    float: left;
 }
