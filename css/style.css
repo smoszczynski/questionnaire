@@ -399,3 +399,37 @@ a.caldisabled {
 *:first-child+html .clearfix {
 	zoom: 1;
 }
+
+
+#left {
+    background-color: yellow;
+    width: 300px;
+    float: left;
+}
+
+#right {
+    background-color: green;
+    margin-left: 350px;
+    width: 300px
+}
+
+#wrapper {
+    background-color: lightblue;
+    width: 651px;
+}
+
+
+
+
+#qLeftCol {
+    background-color: lightgreen;
+    width: 300px;
+    float: left;
+
+}
+
+#qRightCol {
+    background-color: lightblue;
+    margin-left: 350px;
+    width: 300px;
+}
