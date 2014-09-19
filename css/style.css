@@ -403,6 +403,12 @@ a.caldisabled {
 
 
 
+/* 
+    Content
+
+*/
+
+
 
 /* 
     Columns
@@ -429,7 +435,8 @@ a.caldisabled {
 */
 
 .qTitle {
-    font: "Arial","Helvetica",sans-serif;
+    font-family: "Helvetica";
+    margin-left: 10px;
     color: black;
 }
 
@@ -440,7 +447,8 @@ a.caldisabled {
 
 .qDescriptionListTitle {
     width: 120px;
-    font: "Arial","Helvetica",sans-serif;
+    font-family: "Helvetica";
+    font-size: 14px;
     color: #525252;
     float: left;
 }
