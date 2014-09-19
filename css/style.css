@@ -401,27 +401,13 @@ a.caldisabled {
 }
 
 
-#left {
-    background-color: yellow;
-    width: 300px;
-    float: left;
-}
-
-#right {
-    background-color: green;
-    margin-left: 350px;
-    width: 300px
-}
-
-#wrapper {
-    background-color: lightblue;
-    width: 651px;
-}
 
 
 
+/* 
+    Columns
 
-
+*/
 
 .qLeftCol {
     background-color: lightgreen;
@@ -434,25 +420,42 @@ a.caldisabled {
     background-color: lightblue;
     margin-left: 550px;
     width: 500px;
+
+
 }
 
-
-
-.qDescriptionListTitle {
-    font-family: verdana;
-    color: #525252;
-}
+/*
+    Title in the columns
+*/
 
 .qTitle {
-    font-family: verdana;
+    font: "Arial","Helvetica",sans-serif;
     color: black;
 }
 
+
+/* 
+    Title in the description list
+*/
+
+.qDescriptionListTitle {
+    width: 120px;
+    font: "Arial","Helvetica",sans-serif;
+    color: #525252;
+    float: left;
+}
+
+/* 
+    blank input box
+*/
+
 .qInputText input {
+    margin: 3px 0px 3px 85px;
     width: 250px;
     height: 20px;
 }
 
-.qDescriptionListTitle {
-    float: left;
+.qInputTextBlank {
+    margin: 3px 0px 3px 0px;
 }
+
