@@ -403,22 +403,22 @@ a.caldisabled {
 
 
 
-/* 
-    Content
-
-*/
+/* MEIN CODE */
 
 
+body {
+    font-family: "Helvetica";
+    color: black;
+    background-color: grey;
+    font-size: 14px;
+}
 
-/* 
-    Columns
-
-*/
 
 .qLeftCol {
     background-color: lightgreen;
     width: 500px;
     float: left;
+    margin-bottom: 30px;
 
 }
 
@@ -426,44 +426,53 @@ a.caldisabled {
     background-color: lightblue;
     margin-left: 550px;
     width: 500px;
-
+    margin-bottom: 30px;
 
 }
 
-/*
-    Title in the columns
-*/
+.qFirstColAttribute {
+    padding-left: 10px;
 
-.qTitle {
-    font-family: "Helvetica";
-    margin-left: 10px;
-    color: black;
+}
+
+.qSecondColAttribute {
+    padding-left: 20px;
+
 }
 
 
-/* 
-    Title in the description list
-*/
 
-.qDescriptionListTitle {
-    width: 120px;
-    font-family: "Helvetica";
-    font-size: 14px;
-    color: #525252;
-    float: left;
+.qTitleLeft .qTitleRight {
+    font-size: 18px;
+    padding:  10px 0px 20px 10px;
 }
-
-/* 
-    blank input box
-*/
 
 .qInputText input {
-    margin: 3px 0px 3px 85px;
+    margin: 3px 0px 3px 140px;
     width: 250px;
     height: 20px;
 }
 
-.qInputTextBlank {
+
+
+.qBlank {
     margin: 3px 0px 3px 0px;
 }
+
+
+
+.qFakeRadioButton .qFakeCheckbox {
+    width: 19px;
+    height: 19px;
+}
+
+dl {
+    width: 100%
+    padding: 1px 0;
+    float: left;
+    margin: 0px 10px 0px 10px;
+
+}
+
+
 

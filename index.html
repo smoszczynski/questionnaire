@@ -12,220 +12,607 @@
 </head>
 <body>
 
+
 <div id="qContent">
   <form class="qQuestionaire" action="process_form.php" class="qActionForm" method="post" novalidate="">
-    <div class="qTwoCol">
 
-      <div class="qLeftCol">
-        <div class="qTitle">Angaben zur betreuenden Person
+    <h1>Fragebogen</h1>
 
-          <dl class="qDesciptionListLeft">
-            <dt class="qDescriptionListTitle">Name <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>  
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd>
+<!-- Leistungen -->
 
-            <dt class="qDescriptionListTitle">Vorname <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd> 
+    <div>
+      <h2>Gewünschte Leistungen</h2>
+        <div class="qDivLeft">
+          <div>
+            <h3>Wunschtermin der Anreise Ihrer Betreuungskraft</h3>
+            <dl>
+              <dt></dt>
+              <dd>
+                <span class="qFakeRadioButton"></span>
+                <input type="radio" style="position: absolute; left: -99em;">
+                <label class="qOption">Innerhalb 4 Werktage</label>
 
-            <dt class="qDescriptionListTitle">Straße, Nr. <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd> 
+                <span class="qFakeRadioButton"></span>
+                <input type="radio" style="position: absolute; left: -99em;">
+                <label class="qOption">Bis 7 Werktage</label>
 
-            <dt class="qDescriptionListTitle">Postleitzahl <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd> 
+                <span class="qFakeRadioButton"></span>
+                <input type="radio" style="position: absolute; left: -99em;">
+                <label class="qOption">Wunschtermin eintragen</label>
+              </dd>
+            </dl>
+          </div>
+        </div>
 
-            <dt class="qDescriptionListTitle">Ort <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt> 
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd>
+        <div class="qDivRight">
+          <div>
+            <h3>Betreuungsdauer</h3>
+            <dl>
+              <dt></dt>
+              <dd>
+                <span class="qFakeRadioButton"></span>
+                <input type="radio" style="position: absolute; left: -99em;">
+                <label class="qOption">Unbegrenzt</label>
 
-            <dt class="qDescriptionListTitle">Festnetz<span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd> 
-
-            <dt class="qDescriptionListTitle">Telefon (Mobil)
-            </dt> 
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd>
-          </dl>
-
-        </div>      
-      </div>  
-
-
-          <div class="qRightCol">
-        <div class="qTitle">Angaben zur betreuenden Person
-
-          <dl class="qDesciptionListLeft">
-            <dt class="qDescriptionListTitle">Name <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>  
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd>
-
-            <dt class="qDescriptionListTitle">Vorname <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd> 
-
-            <dt class="qDescriptionListTitle">Straße, Nr. <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd> 
-
-            <dt class="qDescriptionListTitle">Postleitzahl <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd> 
-
-            <dt class="qDescriptionListTitle">Ort <span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt> 
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd>
-
-            <dt class="qDescriptionListTitle">Festnetz<span class="qFormRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd> 
-
-            <dt class="qDescriptionListTitle">Telefon (Mobil)
-            </dt> 
-            <dd>
-                <span class="qInputText">
-                  <input type="text" value-size="60" maxlength="128">
-                </span>
-                <div class="qInputTextBlank">
-                </div>
-            </dd>
-          </dl>
-
-        </div>      
-      </div>    
+                <span class="qFakeRadioButton"></span>
+                <input type="radio" style="position: absolute; left: -99em;">
+                <label class="qOption">Bis</label>
+              </dd>
+            </dl>
+          </div>
+        </div>
     </div>
-
-
 
     
+    <div>
+      <div class="qTitleLeft">Angaben zur betreuenden Person</div>
+      <div class="qTitleRight">Angaben zur Ansprechperson</div>
+        
+      <div class="qLeftCol">
+        <dl class="qFullWidth">
 
-            <div class="qRadioButton">
-                 <label>
-                      Wunschtermin der Anreise Ihrer Betreuungskraft
-                 </label>
-                 
-                 
-                 <div class="qOptionRadioButton">
-                      <input type="radio" name="wTermin" value="Innerhalb 4 Werktage">
-                      <span class="qOptionTitle">
-                           Innerhalb 4 Werktage
-                      </span>
-                 </div>
-                 
-                 
-                 <div class="qOptionRadioButton">
-                      <input type="radio" name="wTermin" value="Bis 7 Werktage">
-                      <span class="qOptionTitle">
-                           Bis 7 Werktage
-                      </span>
-                 </div>
-                 
-                 
-                 <div class="qOptionRadioButton">
-                      <input type="radio" name="wTermin" value="Wunschtermin eintragen">
-                      <span class="qOptionTitle">
-                           Wunschtermin eintragen
-                      </span>
-                 </div>
-            </div>
+          <dt class="qFirstColAttribute">Name
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+           <dt class="qFirstColAttribute">Vorname
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+           <dt class="qFirstColAttribute">Straße, Nr.
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>   
+
+           <dt class="qFirstColAttribute">Postleitzahl
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>  
+
+          <dt class="qFirstColAttribute">Ort
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>  
+
+          <dt class="qFirstColAttribute">Festnetz (mit Vorwahl)
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>  
+
+
+          <dt class="qFirstColAttribute">Telefon (Mobil)
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd> 
+
+          <dt class="qFirstColAttribute">Geburtsdatum
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>   
+      </div>    
+
+      <div class="qRightCol">
+          <dt class="qSecondColAttribute">Name
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+         
+          <dt class="qSecondColAttribute">Vorname
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
             
-            <div id="field7-container" class="field f_50">
-                 <label>
-                      Ab dem (Datum)
-                 </label>
-                 <input class="ttw-date date" maxlength="524288" name="betreuung_ab"
-                 required="" size="20" tabindex="0" title="">
-            </div>
+          <dt class="qSecondColAttribute">Straße, Nr.
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
 
-     </div>  
+              
+          <dt class="qSecondColAttribute">Postleitzahl
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
 
+               
+          <dt class="qSecondColAttribute">Ort
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+              
+          <dt class="qSecondColAttribute">Festnetz (mit Vorwahl)
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+     
+          <dt class="qSecondColAttribute">Telefon (Mobil)
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+             
+          <dt class="qSecondColAttribute">E-Mail-Adresse
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+        </dl>
+      </div>
+        
+      <div>
+        <dl class="qFullWidth">
+         
+          <dt class="qFirstColAttribute">Größe (in cm)
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>  
+
+
+          <dt class="qFirstColAttribute">Gewicht (in kg)
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qInputText">
+              <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd> 
+        </dl>
+
+
+        <dl class="qFullWidth">
+          <dt class="qFirstCol">Wohnt der Patient allein?></dt>
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Ja</label>
+
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Nein</label>
+          </dd>
+        </dl>
+      </div>
     </div>
 
 
+<!-- Pflegestufen und Pflegedienst -->
+
+    <div>
+      <h2>Pflegestufen und Pflegedienst</h2>
+      <div>
+
+<!-- Pflegestufen: Radio -->
+
+        <h3>Pflegestufe</h3>
+        <dl class="qFullWidth">
+          <dt class="qFirstCol">Angaben zur Pflegestufe</dt>
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Keine</label>
+
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Pflegestufe</label>
+
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Beantragt</label>
+          </dd>
+        </dl>
+
+        <dl class="qFullWidth">
+          <dt class="qFirstCol">Pflegestufe</dt>
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">0</label>
+
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">1</label>
+
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">2</label>
+
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">3</label>
+          </dd>
+        </dl>
+
+<!-- Pflegedienst: Radio -->
+
+        <h3>Pflegedienst</h3>
+        <dl class="qFullWidth">
+          <dt class="qSecondCol">Erfolgt z.Z. Versorgung durch Pflegedienst?</dt>
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Ja</label>
+
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Nein</label>
+          </dd>
+
+          <dt class="qSecondCol">Wie oft täglich?</dt>
+          </dt>
+          <dd>
+            <span class="qInputText">
+            <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+          <dt class="qSecondCol">Tageszeiten der Besuche des Pflegedienstes</dt>
+          </dt>
+          <dd>
+            <span class="qInputText">
+            <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+          <dt class="qSecondCol">Welche Tätigkeiten erbringt der Pflegedienst?</dt>
+          </dt>
+          <dd>
+            <span class="qInputText">
+            <input type="text" size="60" maxlength="128">
+            </span>
+            <div class="qBlank"></div>
+          </dd>
+
+          <dt class="qSecondCol">Soll der Pflegedienst weiter in Anspruch genommen werden?</dt>
+            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+          </dt>
+          <dd>
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Ja</label>
+
+            <span class="qFakeRadioButton"></span>
+            <input type="radio" style="position: absolute; left: -99em;">
+            <label class="qOption">Nein</label>
+          </dd>
+        </dl>
+      </div>
 
 
 
+ <!-- BEDARFSANALYSE -->  
 
-  </forms>
+      <h2>Bedarfsanalyse</h2>
+      <div>
+
+<!-- Krankheiten: Check -->
+
+        <h3>Diagnosen / Beschwerden</h3>
+         <div>
+          <dl>
+            <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Allergien" style="position: absolute; left: -99em;">
+              <label class="qOption">Allergien </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Alzheimer" style="position: absolute; left: -99em;">
+              <label class="qOption">Alzheimer </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Apathie" style="position: absolute; left: -99em;">
+              <label class="qOption">Apathie </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Asthma" style="position: absolute; left: -99em;">
+              <label class="qOption">Asthma </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Bluthochdruck" style="position: absolute; left: -99em;">
+              <label class="qOption">Bluthochdruck </label>
+            </dd>
+          </dl>
+
+          <dl>
+            <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Chronische Durchfälle" style="position: absolute; left: -99em;">
+              <label class="qOption">Chronische Durchfälle </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Diabetes" style="position: absolute; left: -99em;">
+              <label class="qOption">Diabetes </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Dekubitus" style="position: absolute; left: -99em;">
+              <label class="qOption">Dekubitus </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Demenz (beginnend)" style="position: absolute; left: -99em;">
+              <label class="qOption">Demenz (beginnend) </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Demenz (fortgeschritten)" style="position: absolute; left: -99em;">
+              <label class="qOption">Demenz (fortgeschritten) </label>
+            </dd>
+          </dl>
+
+          <dl>
+            <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Depression" style="position: absolute; left: -99em;">
+              <label class="qOption">Depression </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Geschwäche" style="position: absolute; left: -99em;">
+              <label class="qOption">Geschwäche </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Herzinfarkt" style="position: absolute; left: -99em;">
+              <label class="qOption">Herzinfarkt </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Herzinsufizienz" style="position: absolute; left: -99em;">
+              <label class="qOption">Herzinsufizienz </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Herzrhytmusstörung" style="position: absolute; left: -99em;">
+              <label class="qOption">Herzrhytmusstörung </label>
+            </dd>
+          </dl>
+
+          <dl>
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Hypertonie" style="position: absolute; left: -99em;">
+              <label class="qOption">Hypertonie </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Inkontinenz" style="position: absolute; left: -99em;">
+              <label class="qOption">Inkontinenz </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Multiple Sklerose" style="position: absolute; left: -99em;">
+              <label class="qOption">Multiple Sklerose </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Osteoporose" style="position: absolute; left: -99em;">
+              <label class="qOption">Osteoporose </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Parkinson" style="position: absolute; left: -99em;">
+              <label class="qOption">Parkinson </label>
+            </dd>
+          </dl>
+
+          <dl>
+            <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Probleme mit der Speiseröhre" style="position: absolute; left: -99em;">
+              <label class="option">Probleme mit der Speiseröhre </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Rheuma" style="position: absolute; left: -99em;">
+              <label class="option">Rheuma </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Schlaganfall" style="position: absolute; left: -99em;">
+              <label class="option">Schlaganfall </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Stoma" style="position: absolute; left: -99em;">
+              <label class="option">Stoma </label>
+            </dd>
+
+             <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Tumor" style="position: absolute; left: -99em;">
+              <label class="option">Tumor </label>
+          </dl>
+        </div>
+
+<!-- Ansteckende Krankheiten: Radio -->
+        <div>
+          <dl>
+            <dt class="qFirstCol">Leidet der Patient an ansteckenden Krankheiten?</dt>
+              <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
+            </dt>
+            <dd>
+              <span class="qFakeRadioButton"></span>
+              <input type="radio" style="position: absolute; left: -99em;">
+              <label class="qOption">Ja</label>
+            </dd>
+            <dd>
+              <span class="qFakeRadioButton"></span>
+              <input type="radio" style="position: absolute; left: -99em;">
+              <label class="qOption">Nein</label>
+            </dd>
+          </dl>
+        </div>
+
+<!-- Koomunikationseinschraenkungen: Check-->
+        <div>
+          <dl>
+            <dt class="qFirstCol">Kommunikationseinschränkung</dt>
+            </dt>
+            <dd>
+              <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Bluthochdruck" style="position: absolute; left: -99em;">
+              <label class="qOption">Sehvermögen</label>
+            </dd>
+            <dd>
+               <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Bluthochdruck" style="position: absolute; left: -99em;">
+              <label class="qOption">Hörvermögen</label>
+            </dd>
+            <dd>
+               <span class="qFakeCheckbox"></span>
+              <input type="checkbox" value="Bluthochdruck" style="position: absolute; left: -99em;">
+              <label class="qOption">Sprachvermögen</label>
+            </dd>
+          </dl>          
+        </div>
+
+      </div>
+    </div>
+ 
+  </form>
 </div>
 
 </body>
