@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <title></title>
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="css/uniform.css" media="screen" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    
 </head>
 <body>
 
@@ -16,275 +13,254 @@
 
     <h1>Fragebogen</h1>
 
-<!-- Leistungen -->
 
-    <div>
+
+    <!-- Leistungen -->
+  
+    <div class="clearfix qSection">
       <h2>Gewünschte Leistungen</h2>
-      <div class="qDivLeft">
+      <div class="qColumn">
         <div>
-          <h3>Wunschtermin der Anreise Ihrer Betreuungskraft</h3>
+          <h3>Wunschtermin der Anreise <br> Ihrer Betreuungskraft</h3>
 
           <div>
-            <input type="radio">
-            <label>Innerhalb 4 Werktage</label>
+            <label>
+              <input name="appointment" value="bis4" type="radio">
+              Innerhalb 4 Werktage
+            </label>
           </div>
           
           <div>
-            <input type="radio">
-            <label>Bis 7 Werktage</label>
+            <label>
+              <input name="appointment" value="bis7" type="radio">
+              Innerhalb 7 Werktage
+            </label>
           </div>
           
           <div>
-            <input type="radio">
-            <label>Wunschtermin eintragen</label>
+            <label>
+              <input name="appointment" value="custom" type="radio">
+              Wunschtermin eintragen
+            </label>
           </div>
 
         </div>
       </div>
 
-      <div class="qDivRight">
+      <div class="qColumn">
         <div>
           <h3>Betreuungsdauer</h3>
 
           <div>
-            <input type="radio">
-            <label>Unbegrenzt</label>
+            <label>
+              <input name="duration" value="unbegrenzt" type="radio">
+              Unbegrenzt
+            </label>
           </div>
 
           <div>
-            <input type="radio">
-            <label>Bis</label>
+            <label>
+              <input name="duration" value="bis" type="radio">
+              Bis
+            </label>
           </div>
-          
+
         </div>
       </div>
     </div>
 
     
-    <div>
-      <div class="qTitleLeft">Angaben zur betreuenden Person</div>
-      <div class="qTitleRight">Angaben zur Ansprechperson</div>
-        
-      <div class="qLeftCol">
+    <div class="clearfix qSection">     
+
+      <div class="qColumn qInputTable">
         <h2>Angaben zur betreuenden Person</h2>
-        <dl class="qFullWidth">
 
-          <dt class="qFirstColAttribute">Name
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
+        <div class="clearfix qRequired qInputTableRow">
 
-           <dt class="qFirstColAttribute">Vorname
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
+          <span>Anrede</span>
+          <div>
+            <label>
+              <input name="gender_client" value="male" type="radio">
+              Herr
+            </label>
+            <label>
+              <input name="gender_client" value="female" type="radio">
+              Frau
+            </label>
+          </div>
+        </div>
 
-           <dt class="qFirstColAttribute">Straße, Nr.
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>   
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Name</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
 
-           <dt class="qFirstColAttribute">Postleitzahl
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>  
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Vorname</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
 
-          <dt class="qFirstColAttribute">Ort
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>  
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Straße, Nr.</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
 
-          <dt class="qFirstColAttribute">Festnetz (mit Vorwahl)
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>  
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Postleitzahl</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
 
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Ort</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
 
-          <dt class="qFirstColAttribute">Telefon (Mobil)
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd> 
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Festnetz</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
 
-          <dt class="qFirstColAttribute">Geburtsdatum
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>   
-        </dl>
+        <label class="clearfix qInputTableRow">
+          <span>Mobil</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Geburtsdatum</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+         <label class="clearfix qRequired qInputTableRow">
+          <span>Größe (in cm)</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+         <label class="clearfix qRequired qInputTableRow">
+          <span>Gewicht (in kg)</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+        <div class="clearfix qRequired qInputTableRow">
+
+          <span>Wohnt der <br>Patient allein?</span>
+          <div>
+            <label>
+              <input name="patient_alone" value="yes" type="radio">
+              Ja
+            </label>
+            <label>
+              <input name="patient_alone" value="no" type="radio">
+              Nein
+            </label>
+          </div>
+        </div>
+
       </div>    
 
-      <div class="qRightCol">
-        <h2>Angaben zur betreuenden Person</h2>
-        <dl class="qFullWidth">
-          <dt class="qSecondColAttribute">Name
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-         
-          <dt class="qSecondColAttribute">Vorname
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-            
-          <dt class="qSecondColAttribute">Straße, Nr.
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-              
-          <dt class="qSecondColAttribute">Postleitzahl
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-               
-          <dt class="qSecondColAttribute">Ort
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-              
-          <dt class="qSecondColAttribute">Festnetz (mit Vorwahl)
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-     
-          <dt class="qSecondColAttribute">Telefon (Mobil)
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-             
-          <dt class="qSecondColAttribute">E-Mail-Adresse
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-        </dl>
-      </div>
-        
-      <div>
-        <dl class="qFullWidth">
-         
-          <dt class="qFirstColAttribute">Größe (in cm)
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>  
 
 
-          <dt class="qFirstColAttribute">Gewicht (in kg)
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-            <span class="qInputText">
-              <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd> 
-        </dl>
 
 
-        <dl class="qFullWidth">
-          <dt class="qFirstCol">Wohnt der Patient allein?></dt>
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-           
-            <input type="radio">
-            <label>Ja</label>
 
-           
-            <input type="radio">
-            <label>Nein</label>
-          </dd>
-        </dl>
+
+
+
+      <div class="qColumn qInputTable">
+        <h2>Angaben zur Ansprechperson</h2>
+
+        <div class="clearfix qRequired qInputTableRow">
+          <span>Anrede</span>
+          <div>
+            <label>
+              <input name="gender" value="male" type="radio">
+              Herr
+            </label>
+            <label>
+              <input name="gender" value="female" type="radio">
+              Frau
+            </label>
+          </div>
+        </div>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Name</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Vorname</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Straße, Nr.</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Postleitzahl</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Ort</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Festnetz</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
+        <label class="clearfix qInputTableRow">
+          <span>Mobil</span>
+          <div>
+            <input type="text">
+          </div>
+        </label>
+
       </div>
     </div>
+
+
+
+
+
+
+
+
 
 
 <!-- Pflegestufen und Pflegedienst -->
