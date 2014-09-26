@@ -77,6 +77,21 @@ textarea {
     margin-left: 9em;
 }
 
+.qInputTable.small {
+    min-width: initial;
+    width: 15em;
+}
+
+.qInputTable.small .qInputTableRow > span {
+    float: none;
+    font-weight: bold;
+}
+
+.qInputTable.small .qInputTableRow > div {
+    margin-left: 0;
+}
+
+
 .qInputTable .qInputTableRow label {
     display: inline-block;
     margin-right: 1em;
