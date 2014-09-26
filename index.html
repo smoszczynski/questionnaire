@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -19,52 +19,60 @@
   
     <div class="clearfix qSection">
       <h2>Gewünschte Leistungen</h2>
-      <div class="qColumn">
-        <div>
-          <h3>Wunschtermin der Anreise <br> Ihrer Betreuungskraft</h3>
 
+      <div class="qColumn qInputTable">
+        <div class="clearfix qRequired qInputTableRow">
+          <span>Wunschtermin der Anreise Ihrer Betreuungskraft</span>
           <div>
-            <label>
-              <input name="appointment" value="bis4" type="radio">
+            <label class="qFullWidth">
+              <input name="appointment" value="bis4" type="radio" data-hide="js-LeistungAbDatum">
               Innerhalb 4 Werktage
             </label>
-          </div>
-          
-          <div>
-            <label>
-              <input name="appointment" value="bis7" type="radio">
+         
+            <label class="qFullWidth">
+              <input name="appointment" value="bis7" type="radio" data-hide="js-LeistungAbDatum">
               Innerhalb 7 Werktage
             </label>
-          </div>
-          
-          <div>
-            <label>
-              <input name="appointment" value="custom" type="radio">
+      
+            <label class="qFullWidth"> 
+              <input name="appointment" value="custom" type="radio" data-show="js-LeistungAbDatum">
               Wunschtermin eintragen
             </label>
           </div>
+        </div>
 
+        <div class="qHidden js-LeistungAbDatum">
+          <label class="clearfix qRequired qInputTableRow">
+            <span>Ab dem (Datum)</span>
+            <div>
+              <input type="text">
+            </div>
+          </label>
         </div>
       </div>
 
-      <div class="qColumn">
-        <div>
-          <h3>Betreuungsdauer</h3>
-
+      <div class="qColumn qInputTable">
+        <div class="clearfix qRequired qInputTableRow">
+          <span>Betreuungsdauer</span>
           <div>
-            <label>
-              <input name="duration" value="unbegrenzt" type="radio">
+            <label class="qFullWidth">
+              <input name="duration" value="unbegrenzt" type="radio" data-hide="js-LeistungBisDatum">
               Unbegrenzt
             </label>
-          </div>
-
-          <div>
-            <label>
-              <input name="duration" value="bis" type="radio">
+         
+            <label class="qFullWidth">
+              <input name="duration" value="bis" type="radio" data-show="js-LeistungBisDatum">
               Bis
             </label>
           </div>
-
+        </div>
+        <div class="qHidden js-LeistungBisDatum">
+          <label class="clearfix qRequired qInputTableRow">
+            <span>Bis zum (Datum)</span>
+            <div>
+              <input type="text">
+            </div>
+          </label>
         </div>
       </div>
     </div>
@@ -139,6 +147,8 @@
           </div>
         </label>
 
+        <hr>
+
         <label class="clearfix qRequired qInputTableRow">
           <span>Geburtsdatum</span>
           <div>
@@ -161,28 +171,43 @@
         </label>
 
         <div class="clearfix qRequired qInputTableRow">
-
-          <span>Wohnt der <br>Patient allein?</span>
+          <span>Wohnt der Patient allein?</span>
           <div>
             <label>
-              <input name="patient_alone" value="yes" type="radio">
+              <input name="patient_alone" value="yes" type="radio" data-hide="js-PatientAlleine">
               Ja
             </label>
             <label>
-              <input name="patient_alone" value="no" type="radio">
+              <input name="patient_alone" value="no" type="radio" data-show="js-PatientAlleine">
               Nein
             </label>
           </div>
         </div>
 
+        <div class="qHidden js-PatientAlleine">
+          <label class="clearfix qRequired qInputTableRow">
+            <span>Anzahl der Personen im Haushalt</span>
+            <div>
+              <input type="text">
+            </div>
+          </label>
+
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Pflegebedürftigkeit der anderen Person</span>
+            <div>
+              <label>
+                <input name="patient_alone" value="yes" type="radio">
+                Ja
+              </label>
+              <label>
+                <input name="patient_alone" value="no" type="radio">
+                Nein
+              </label>
+            </div>
+          </div>
+        </div>
+
       </div>    
-
-
-
-
-
-
-
 
 
       <div class="qColumn qInputTable">
@@ -255,342 +280,341 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-<!-- Pflegestufen und Pflegedienst -->
-
-    <div>
+    <div class="clearfix qSection">
       <h2>Pflegestufen und Pflegedienst</h2>
-      <div>
 
-<!-- Pflegestufen: Radio -->
-
+      <div class="qColumn qInputTable">
         <h3>Pflegestufe</h3>
-        <dl class="qFullWidth">
-          <dt class="qFirstCol">Angaben zur Pflegestufe</dt>
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-           
-            <input type="radio">
-            <label>Keine</label>
 
-           
-            <input type="radio">
-            <label>Pflegestufe</label>
+        <div class="clearfix qRequired qInputTableRow">
+          <span>Angaben zur Pflegestufe</span>
+          <div>
+            <label class="qFullWidth">
+              <input name="appointment" value="bis4" type="radio">
+              Keine
+            </label>
+         
+            <label class="qFullWidth">
+              <input name="appointment" value="bis7" type="radio">
+              Pflegestufe
+            </label>
 
-           
-            <input type="radio">
-            <label>Beantragt</label>
-          </dd>
-        </dl>
+            <label class="qFullWidth">
+              <input name="appointment" value="bis7" type="radio">
+              Beantragt
+            </label>
+          </div> 
+        </div>
 
-        <dl class="qFullWidth">
-          <dt class="qFirstCol">Pflegestufe</dt>
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-           
-            <input type="radio">
-            <label>0</label>
+        <div class="clearfix qRequired qInputTableRow">
+          <span>Pflegestufe</span>
+          <div>
+            <label>
+              <input name="appointment" value="bis4" type="radio">
+              0
+            </label>
+         
+            <label>
+              <input name="appointment" value="bis7" type="radio">
+              1
+            </label>
 
-           
-            <input type="radio">
-            <label>1</label>
+            <label>
+              <input name="appointment" value="bis7" type="radio">
+              2
+            </label>
 
-           
-            <input type="radio">
-            <label>2</label>
+            <label>
+              <input name="appointment" value="bis7" type="radio">
+              3
+            </label>
 
-           
-            <input type="radio">
-            <label>3</label>
-          </dd>
-        </dl>
-
-<!-- Pflegedienst: Radio -->
-
-        <h3>Pflegedienst</h3>
-        <dl class="qFullWidth">
-          <dt class="qSecondCol">Erfolgt z.Z. Versorgung durch Pflegedienst?</dt>
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-           
-            <input type="radio">
-            <label>Ja</label>
-
-           
-            <input type="radio">
-            <label>Nein</label>
-          </dd>
-
-          <dt class="qSecondCol">Wie oft täglich?</dt>
-          </dt>
-          <dd>
-            <span class="qInputText">
-            <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-          <dt class="qSecondCol">Tageszeiten der Besuche des Pflegedienstes</dt>
-          </dt>
-          <dd>
-            <span class="qInputText">
-            <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-          <dt class="qSecondCol">Welche Tätigkeiten erbringt der Pflegedienst?</dt>
-          </dt>
-          <dd>
-            <span class="qInputText">
-            <input type="text" size="60" maxlength="128">
-            </span>
-            <div class="qBlank"></div>
-          </dd>
-
-          <dt class="qSecondCol">Soll der Pflegedienst weiter in Anspruch genommen werden?</dt>
-            <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-          </dt>
-          <dd>
-           
-            <input type="radio">
-            <label>Ja</label>
-
-           
-            <input type="radio">
-            <label>Nein</label>
-          </dd>
-        </dl>
+          </div> 
+        </div>
       </div>
 
+
+      <div class="qColumn qInputTable">
+        <h3>Pflegedienst</h3>
+
+        <div class="clearfix qRequired qInputTableRow">
+          <span>Erfolgt z.&thinsp;Z. Versorgung durch Pflegedienst?</span>
+          <div>
+            <label>
+              <input name="appointment" value="bis4" type="radio">
+              Ja
+            </label>
+         
+            <label>
+              <input name="appointment" value="bis7" type="radio">
+              Nein
+            </label>
+          </div> 
+        </div>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Häufigkeit</span>
+          <div>
+            <input type="text" placeholder="z.&thinsp;B. zwei Mal täglich">
+          </div>
+        </label>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Tageszeiten der Besuche</span>
+          <div>
+            <input type="text" placeholder="z.&thinsp;B. morgens und abends">
+          </div>
+        </label>
+
+        <label class="clearfix qRequired qInputTableRow">
+          <span>Erbrachte Tätigkeiten</span>
+          <div>
+            <input type="text" placeholder="z.&thinsp;B. Hilfe bei der Grundpflege">
+          </div>
+        </label>
+
+      </div>
+    </div>
 
 
  <!-- BEDARFSANALYSE -->  
 
+    <div class="clearfix qSection">
       <h2>Bedarfsanalyse</h2>
-      <div>
 
-<!-- Krankheiten: Check -->
+      <h3>Diagnosen / Beschwerden</h3>
+      <div class="clearfix qIllnesses">
+        <div class="qColumn">
+          <label class="qFullWidth">
+            <input type="checkbox" value="Allergien">
+            Allergien
+          </label>
 
-        <h3>Diagnosen / Beschwerden</h3>
-         <div>
-          <dl>
-            <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Allergien">
-              <label>Allergien </label>
-            </dd>
+          <label class="qFullWidth">
+            <input type="checkbox" value="Alzheimer">
+            Alzheimer
+          </label>
 
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Alzheimer">
-              <label>Alzheimer </label>
-            </dd>
+          <label class="qFullWidth">
+            <input type="checkbox" value="Apathie">
+            Apathie
+          </label>
 
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Apathie">
-              <label>Apathie </label>
-            </dd>
+          <label class="qFullWidth">
+            <input type="checkbox" value="Asthma">
+            Asthma
+          </label>
 
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Asthma">
-              <label>Asthma </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Bluthochdruck">
-              <label>Bluthochdruck </label>
-            </dd>
-          </dl>
-
-          <dl>
-            <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Chronische Durchfälle">
-              <label>Chronische Durchfälle </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Diabetes">
-              <label>Diabetes </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Dekubitus">
-              <label>Dekubitus </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Demenz (beginnend)">
-              <label>Demenz (beginnend) </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Demenz (fortgeschritten)">
-              <label>Demenz (fortgeschritten) </label>
-            </dd>
-          </dl>
-
-          <dl>
-            <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Depression">
-              <label>Depression </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Geschwäche">
-              <label>Geschwäche </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Herzinfarkt">
-              <label>Herzinfarkt </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Herzinsufizienz">
-              <label>Herzinsufizienz </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Herzrhytmusstörung">
-              <label>Herzrhytmusstörung </label>
-            </dd>
-          </dl>
-
-          <dl>
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Hypertonie">
-              <label>Hypertonie </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Inkontinenz">
-              <label>Inkontinenz </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Multiple Sklerose">
-              <label>Multiple Sklerose </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Osteoporose">
-              <label>Osteoporose </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Parkinson">
-              <label>Parkinson </label>
-            </dd>
-          </dl>
-
-          <dl>
-            <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Probleme mit der Speiseröhre">
-              <label class="option">Probleme mit der Speiseröhre </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Rheuma">
-              <label class="option">Rheuma </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Schlaganfall">
-              <label class="option">Schlaganfall </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Stoma">
-              <label class="option">Stoma </label>
-            </dd>
-
-             <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Tumor">
-              <label class="option">Tumor </label>
-          </dl>
+          <label class="qFullWidth">
+            <input type="checkbox" value="Bluthochdruck">
+            Bluthochdruck
+          </label>
         </div>
 
-<!-- Ansteckende Krankheiten: Radio -->
-        <div>
-          <dl>
-            <dt class="qFirstCol">Leidet der Patient an ansteckenden Krankheiten?</dt>
-              <span class="qRequired" title="Diese Angabe wird benötigt.">*</span>
-            </dt>
-            <dd>
-             
-              <input type="radio">
-              <label>Ja</label>
-            </dd>
-            <dd>
-             
-              <input type="radio">
-              <label>Nein</label>
-            </dd>
-          </dl>
+
+        <div class="qColumn">
+          <label class="qFullWidth">
+            <input type="checkbox" value="Chronische Durchfälle">
+            Chronische Durchfälle
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Diabetes">
+            Diabetes
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Dekubitus">
+            Dekubitus
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Demenz (beginnend)">
+            Demenz (beginnend)
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Demenz (fortgeschritten)">
+            Demenz (fortgeschritten)
+          </label>
         </div>
 
-<!-- Koomunikationseinschraenkungen: Check-->
-        <div>
-          <dl>
-            <dt class="qFirstCol">Kommunikationseinschränkung</dt>
-            </dt>
-            <dd>
-              <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Bluthochdruck">
-              <label>Sehvermögen</label>
-            </dd>
-            <dd>
-               <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Bluthochdruck">
-              <label>Hörvermögen</label>
-            </dd>
-            <dd>
-               <span class="qFakeCheckbox"></span>
-              <input type="checkbox" value="Bluthochdruck">
-              <label>Sprachvermögen</label>
-            </dd>
-          </dl>          
+
+        <div class="qColumn">
+          <label class="qFullWidth">
+            <input type="checkbox" value="Depressionen">
+            Depressionen
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Gehschwäche">
+            Gehschwäche
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Herzinfarkt">
+            Herzinfarkt
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Herzinsufizienz">
+            Herzinsufizienz
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Herzrhytmusstörung">
+            Herzrhytmusstörung
+          </label>
         </div>
 
+
+        <div class="qColumn">
+          <label class="qFullWidth">
+            <input type="checkbox" value="Hypertonie">
+            Hypertonie
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Inkontinenz">
+            Inkontinenz
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Multiple Sklerose">
+            Multiple Sklerose
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Osteoporose">
+            Osteoporose
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Parkinson">
+            Parkinson
+          </label>
+        </div>
+
+
+        <div class="qColumn">
+          <label class="qFullWidth">
+            <input type="checkbox" value="Probleme mit der Speiseröhre">
+            Probleme mit der Speiseröhre
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Rheuma">
+            Rheuma
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Schlaganfall">
+            Schlaganfall
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Stoma">
+            Stoma
+          </label>
+
+          <label class="qFullWidth">
+            <input type="checkbox" value="Tumor">
+            Tumor
+          </label>
+        </div>
+      </div>
+
+      <div class="qColumn">
+        <div>Leidet der Patient an ansteckenden Krankheiten?</div>
+        <div class="qAnswers horizontal">
+          <label>
+            <input name="patient_illness" value="yes" type="radio" data-show="js-PatientAnsteckend">
+            Ja
+          </label>
+          <label>
+            <input name="patient_illness" value="no" type="radio" data-hide="js-PatientAnsteckend">
+            Nein
+          </label>
+          
+          <div class="js-PatientAnsteckend qHidden">
+            <input placeholder="Krankheiten" type="text">
+          </div>
+        </div>
+      </div>  
+      
+      <div class="qColumn">
+        <div>Kommunikationseinschränkung</div>
+        <div class="qAnswers vertical">
+
+          <label>
+            <input type="checkbox" value="Sehvermögen" data-toggle="js-PatientEinschraenkungSehen">
+            Sehvermögen
+          </label>
+
+          <label>
+            <input type="checkbox" value="Hörvermögen" data-toggle="js-PatientEinschraenkungHoeren">
+            Hörvermögen
+          </label>
+
+          <label>
+            <input type="checkbox" value="Sprachvermögen" data-toggle="js-PatientEinschraenkungSprechen">
+            Sprachvermögen
+          </label>
+
+        </div>
       </div>
     </div>
- 
+
+
+<!-- data-toggle="js-PatientAnsteckend" 
+
+<label class="clearfix qRequired qInputTableRow">
+          <span>Name</span>
+          <div>
+            <textarea></textarea>
+          </div>
+        </label>
+
+-->
+
+
+
+
+
+   
   </form>
 </div>
+
+
+<script>
+  if(!window.jQuery)
+    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></sc'+'ript>');
+</script>
+<script>
+  jQuery(function(){
+    jQuery("body").on("change", "input[data-show]", function(){
+      var name = jQuery(this).data("show");
+      jQuery("." + name).fadeIn();
+    });
+
+    jQuery("body").on("change", "input[data-hide]", function(){
+      var name = jQuery(this).data("hide");
+      jQuery("." + name).fadeOut();
+    });
+
+    jQuery("body").on("change", "input[data-toggle]", function(){
+      var name = jQuery(this).data("toggle");
+      var checked = jQuery(this).prop("checked");
+      if(checked){
+        jQuery("." + name).fadeIn();      
+      } else { 
+        jQuery("." + name).fadeOut();      
+      }
+    });
+
+  });
+
+</script>
 
 </body>
 </html>

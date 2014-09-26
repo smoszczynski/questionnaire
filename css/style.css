@@ -26,14 +26,23 @@
 /* MEIN CODE */
 
 
-body {
-    font-family: "Helvetica";
-    color: black;
-    background-color: grey;
+
+input, textarea {
+    font-size: 1em;
 }
 
-input {
-    font-size: 1em;
+
+input[type="text"], textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    border: 0.1em solid #aaa;
+    padding: 0.25em;
+}
+
+textarea {
+    min-height: 5em;
+    resize: none;
 }
 
 .qColumn {
@@ -41,44 +50,43 @@ input {
     margin-right: 2em;
 }
 
+.qColumn > h3 {
+    margin-top: 0;
+}
+
 .qInputTable {
     min-width: 25em;
 }
 
-.qInputTable > .qInputTableRow {
+.qInputTable .qInputTableRow {
     display: block;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
 
-.qInputTable > .qInputTableRow > div {
-    margin-left: 8em;
+
+.qInputTable .qInputTableRow > span {
+    float: left;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    max-width: 8em;
 }
 
-.qInputTable > .qInputTableRow > div > input[type="text"]{
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    border: 0.1em;
-    padding: 0.25em;
+.qInputTable .qInputTableRow > div {
+    /*Abstand von anfang der linken seite bis zu der linie */
+    margin-left: 9em;
 }
 
-.qInputTable > .qInputTableRow label {
+.qInputTable .qInputTableRow label {
     display: inline-block;
     margin-right: 1em;
     padding-top: 0.35em;
 
 }
 
-.qInputTable > .qInputTableRow input[type="radio"] {
+.qInputTable .qInputTableRow input[type="radio"] {
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.qInputTable > .qInputTableRow > span {
-    float: left;
-    padding-top: 0.35em;
-    padding-bottom: 0.35em;
 }
 
 .qRequired > span:after {
@@ -86,3 +94,85 @@ input {
     color: red;
     padding-left: 0.2em;
 }
+
+.qFullWidth {
+    display: block !important;
+    width: auto;
+}
+
+.qInputTable hr {
+    border: 0.1em solid rgba(0,0,0,0.25);
+}
+
+
+.qHidden {
+    display: none;
+}
+
+.qIllnesses {
+    margin-bottom: 0.5em;
+}
+
+.qIllnesses > .qColumn {
+    margin-bottom: 0.5em;
+    width: 15em;
+}
+
+.qAnswers {
+    padding-left: 2em;
+}
+
+.qAnswers input {
+    margin-top: 0.25em;
+}
+
+.qAnswers.horizontal label {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.qAnswers.vertical label {
+    display: block;
+}
+
+/*
+@media (min-width: 65em) {
+    .qInputTable .qInputTableRow > span {
+        max-width: 10em;
+    }
+
+    .qInputTable .qInputTableRow > div {
+        margin-left: 11em;
+    }
+
+    .qInputTable {
+        min-width: 30em;
+    }
+}
+*/
+
+@media print {
+    body {
+        font-size: 0.7em;
+    }
+}
+
+@media screen {
+    body {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
