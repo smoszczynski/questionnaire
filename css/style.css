@@ -81,7 +81,10 @@ textarea {
     display: inline-block;
     margin-right: 1em;
     padding-top: 0.35em;
+}
 
+.qInputTable .qInputTableRow label:last-of-type {
+    padding-bottom: 0.35em;
 }
 
 .qInputTable .qInputTableRow input[type="radio"] {
@@ -106,7 +109,7 @@ textarea {
 
 
 .qHidden {
-    display: none;
+    display: none !important;
 }
 
 .qIllnesses {
@@ -133,6 +136,10 @@ textarea {
 
 .qAnswers.vertical label {
     display: block;
+}
+
+.qSpaceBelow {
+    margin-bottom: 0.5em;
 }
 
 /*
