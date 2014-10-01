@@ -570,6 +570,7 @@
 
         <div class="qColumn">
 
+<!--
           <div class="qInputTableRow qSpaceBelow clearfix">
             <span>Kom&shy;mu&shy;ni&shy;ka&shy;tions&shy;ein&shy;schrän&shy;kung</span>
           
@@ -590,51 +591,103 @@
               </label>
             </div>
           </div>
+-->
 
-          <div class="qInputTableRow clearfix qHidden js-PatientEinschraenkungSehen">
-            <span>Sehvermögen</span>
-          
-            <div>
-              <label>
-                <input type="radio" name="visionImpairment" value="teilweise">
-                Teilweise eingeschränkt
-              </label>
+          <div class="qColumn qInputTable small">
+            <div class="qInputTableRow clearfix">
+              <span>Kom&shy;mu&shy;ni&shy;ka&shy;tions&shy;ein&shy;schrän&shy;kung</span>
 
-              <label class="qFullWidth">
-                <input type="radio" name="visionImpairment" value="ganz">
-                Ganz eingeschränkt
-              </label>
+               <div>
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="yes" type="checkbox" data-toggle="js-PatientEinschraenkungSehen">
+                  Sehvermögen
+                </label>
+
+                <label class="qFullWidth"> 
+                  <input name="patient_illness" value="no" type="checkbox" data-toggle="js-PatientEinschraenkungHoeren">
+                  Hörvermögen
+                </label>
+
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="no" type="checkbox" data-toggle="js-PatientEinschraenkungSprechen">
+                  Sprachvermögen
+                </label>
+
+              </div>
+            </div>  
+          </div>
+
+<!--
+        <div class="qLine qSpaceBelow">
+          <div class="qLineLeft">
+            <span>Leidet der Patient an ansteckenden Krankheiten?</span>
+          </div>
+            <label>
+              <input name="patient_illness" value="yes" type="radio" data-show="js-PatientAnsteckend">
+              Ja
+            </label>
+            <label>
+              <input name="patient_illness" value="no" type="radio" data-hide="js-PatientAnsteckend">
+              Nein
+            </label>
+            <div class="js-PatientAnsteckend qHidden">
+              <input placeholder="Krankheiten" type="text">
             </div>
+        </div>
+-->
+
+
+          <div class="qInputTableRow qHidden js-PatientEinschraenkungSehen">
+            <div class="qLineLeft">
+              <span>Sehvermögen</span>
+            </div>
+         
+              <div>
+                <label>
+                  <input type="radio" name="visionImpairment" value="teilweise">
+                  Teilweise eingeschränkt
+                </label>
+
+                <label>
+                  <input type="radio" name="visionImpairment" value="ganz">
+                  Ganz eingeschränkt
+                </label>
+              </div>
           </div>
 
 
-          <div class="qInputTableRow clearfix qHidden js-PatientEinschraenkungHoeren">
-            <span>Hörvermögen</span>
-          
+          <div class="qInputTableRow qHidden js-PatientEinschraenkungHoeren">
+             <div class="qLineLeft">
+                <span>Hörvermögen</span>
+             </div>
+
             <div>
               <label>
                 <input type="radio" name="hearingImpairment" value="teilweise">
                 Teilweise eingeschränkt
               </label>
 
-              <label class="qFullWidth">
+              <label>
                 <input type="radio" name="hearingImpairment" value="ganz">
                 Ganz eingeschränkt
               </label>
             </div>
           </div>
 
+<!-- <label class="qFullWidth"> deleted -->
 
-          <div class="qInputTableRow clearfix qHidden js-PatientEinschraenkungSprechen">
-            <span>Sprachvermögen</span>
-          
+          <div class="qInputTableRow qHidden js-PatientEinschraenkungSprechen">
+            <div class="qLineLeft">
+              <span>Sprachvermögen</span>
+            </div>
+
             <div>
               <label>
                 <input type="radio" name="speachImpairment" value="teilweise">
                 Teilweise eingeschränkt
               </label>
 
-              <label class="qFullWidth">
+              <label>
                 <input type="radio" name="speachImpairment" value="ganz">
                 Ganz eingeschränkt
               </label>
@@ -690,6 +743,15 @@
             </div>  
           </div>
 
+<!-- artificial class 
+
+          <div class="qColumn qInputTable small">
+            <div class="qInputTableRow clearfix">
+            
+            </div>  
+          </div>
+-->
+
           <div class="qColumn qInputTable small">
             <div class="qInputTableRow clearfix">
               <span>Körperpflege</span>
@@ -737,9 +799,11 @@
               </div>
             </div>  
           </div>
+
+
         </div>
+
       </div>
-    </div>
 
 
 <!-- data-toggle="js-PatientAnsteckend" 
