@@ -183,6 +183,16 @@ textarea {
 
 }
 
+.qCommunication {
+    background-color: darkgreen;
+}
+
+.qSection {
+    background-color: pink;
+}
+
+
+
 /*
 @media (min-width: 65em) {
     .qInputTable .qInputTableRow > span {
