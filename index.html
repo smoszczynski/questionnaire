@@ -409,15 +409,15 @@
             <input type="checkbox" value="Bluthochdruck">
             Bluthochdruck
           </label>
+
+           <label class="qFullWidth">
+            <input type="checkbox" value="Chronische Durchfälle">
+            Chronische Durchfälle
+          </label>
         </div>
 
 
         <div class="qColumn">
-          <label class="qFullWidth">
-            <input type="checkbox" value="Chronische Durchfälle">
-            Chronische Durchfälle
-          </label>
-
           <label class="qFullWidth">
             <input type="checkbox" value="Diabetes">
             Diabetes
@@ -437,11 +437,8 @@
             <input type="checkbox" value="Demenz (fortgeschritten)">
             Demenz (fortgeschritten)
           </label>
-        </div>
 
-
-        <div class="qColumn">
-          <label class="qFullWidth">
+           <label class="qFullWidth">
             <input type="checkbox" value="Depressionen">
             Depressionen
           </label>
@@ -450,7 +447,10 @@
             <input type="checkbox" value="Gehschwäche">
             Gehschwäche
           </label>
+        </div>
 
+
+        <div class="qColumn">
           <label class="qFullWidth">
             <input type="checkbox" value="Herzinfarkt">
             Herzinfarkt
@@ -465,11 +465,8 @@
             <input type="checkbox" value="Herzrhytmusstörung">
             Herzrhytmusstörung
           </label>
-        </div>
 
-
-        <div class="qColumn">
-          <label class="qFullWidth">
+           <label class="qFullWidth">
             <input type="checkbox" value="Hypertonie">
             Hypertonie
           </label>
@@ -483,7 +480,10 @@
             <input type="checkbox" value="Multiple Sklerose">
             Multiple Sklerose
           </label>
+        </div>
 
+
+        <div class="qColumn">
           <label class="qFullWidth">
             <input type="checkbox" value="Osteoporose">
             Osteoporose
@@ -493,10 +493,7 @@
             <input type="checkbox" value="Parkinson">
             Parkinson
           </label>
-        </div>
-
-
-        <div class="qColumn">
+        
           <label class="qFullWidth">
             <input type="checkbox" value="Probleme mit der Speiseröhre">
             Probleme mit der Speiseröhre
@@ -525,8 +522,30 @@
       </div>
 
 
-      <div class="qColumn qInputTable">
+    
 
+      <div class="qColumn qInputTableRow clearfix">
+
+
+        <div class="qLine qSpaceBelow">
+          <div class="qLineLeft">
+            <span>Leidet der Patient an ansteckenden Krankheiten?</span>
+          </div>
+            <label>
+              <input name="patient_illness" value="yes" type="radio" data-show="js-PatientAnsteckend">
+              Ja
+            </label>
+            <label>
+              <input name="patient_illness" value="no" type="radio" data-hide="js-PatientAnsteckend">
+              Nein
+            </label>
+            <div class="js-PatientAnsteckend qHidden">
+              <input placeholder="Krankheiten" type="text">
+            </div>
+        </div>
+
+
+        <!--
 
         <div class="qInputTableRow clearfix">
           <span>Leidet der Patient an ansteckenden Krankheiten?</span>
@@ -545,8 +564,9 @@
             </div>
           </div>
         </div>  
+      -->
 
-        <div class="qInputTableRow qSpaceDown clearfix">
+        <div class="qInputTableRow qSpaceBelow clearfix">
           <span>Kom&shy;mu&shy;ni&shy;ka&shy;tions&shy;ein&shy;schrän&shy;kung</span>
         
           <div>
@@ -616,33 +636,106 @@
             </label>
           </div>
         </div>
+      
+
+        <div class="qColumn qInputTable small">
+          <div class="qInputTableRow clearfix">
+            <span>Bewegung</span>
+             <div>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="yes" type="checkbox">
+                Selbstständig
+              </label>
+              <label class="qFullWidth"> 
+                <input name="patient_illness" value="no" type="checkbox">
+                Hilfe nötig
+              </label>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="no" type="checkbox">
+                Überwiegend im Rollstuhl
+              </label>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="no" type="checkbox">
+                Bettlägerig
+              </label>
+            </div>
+          </div>  
+        </div>
+
+        <div class="qColumn qInputTable small">
+          <div class="qInputTableRow clearfix">
+            <span>Hilfsmittel zur Bewegung</span>
+             <div>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="yes" type="checkbox">
+                Transferlifter
+              </label>
+              <label class="qFullWidth"> 
+                <input name="patient_illness" value="no" type="checkbox">
+                Hebegurt
+              </label>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="no" type="checkbox">
+                Rollator
+              </label>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="no" type="checkbox">
+                Hebesitz
+              </label>
+            </div>
+          </div>  
+        </div>
+
+        <div class="qColumn qInputTable small">
+          <div class="qInputTableRow clearfix">
+            <span>Körperpflege</span>
+             <div>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="yes" type="checkbox">
+                Selbstständig
+              </label>
+              <label class="qFullWidth"> 
+                <input name="patient_illness" value="no" type="checkbox">
+                Unter Anleitung
+              </label>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="no" type="checkbox">
+                Hilfe nötig
+              </label>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="no" type="checkbox">
+                Komplette Unterstützung
+              </label>
+            </div>
+          </div>  
+        </div>
+
+        <div class="qColumn qInputTable small">
+          <div class="qInputTableRow clearfix">
+            <span>Hilfsmittel zur Bewegung</span>
+             <div>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="yes" type="checkbox">
+                Nachtstuhl
+              </label>
+              <label class="qFullWidth"> 
+                <input name="patient_illness" value="no" type="checkbox">
+                Badewannenlift
+              </label>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="no" type="checkbox">
+                Duschstuhl / Hocker
+              </label>
+              <label class="qFullWidth">
+                <input name="patient_illness" value="no" type="checkbox">
+                Weitere
+              </label>
+            </div>
+          </div>  
+        </div>
+
+
       </div>
-
-      <div class="qColumn qInputTable small">
-        <div class="qInputTableRow clearfix">
-          <span>Bewegung</span>
-           <div>
-            <label class="qFullWidth">
-              <input name="patient_illness" value="yes" type="radio">
-              Selbstständig
-            </label>
-            <label class="qFullWidth"> 
-              <input name="patient_illness" value="no" type="radio">
-              Hilfe nötig
-            </label>
-            <label class="qFullWidth">
-              <input name="patient_illness" value="no" type="radio">
-              Überwiegend im Rollstuhl
-            </label>
-            <label class="qFullWidth">
-              <input name="patient_illness" value="no" type="radio">
-              Bettlägerig
-            </label>
-          </div>
-        </div>  
-      </div>
-
-
     </div>
 
 

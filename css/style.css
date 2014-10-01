@@ -25,7 +25,9 @@
 
 /* MEIN CODE */
 
-
+body {
+    padding-left: 3em;
+}
 
 input, textarea {
     font-size: 1em;
@@ -38,6 +40,9 @@ input[type="text"], textarea {
     margin: 0;
     border: 0.1em solid #aaa;
     padding: 0.25em;
+
+    background-color: red;
+
 }
 
 textarea {
@@ -48,6 +53,8 @@ textarea {
 .qColumn {
     float: left;
     margin-right: 2em;
+
+    background-color: orange;
 }
 
 .qColumn > h3 {
@@ -56,6 +63,8 @@ textarea {
 
 .qInputTable {
     min-width: 25em;
+
+    background-color: lightgreen;
 }
 
 .qInputTable .qInputTableRow {
@@ -80,6 +89,8 @@ textarea {
 .qInputTable.small {
     min-width: initial;
     width: 15em;
+
+    background-color: grey;
 }
 
 .qInputTable.small .qInputTableRow > span {
@@ -95,7 +106,7 @@ textarea {
 .qInputTable .qInputTableRow label {
     display: inline-block;
     margin-right: 1em;
-    padding-top: 0.35em;
+    padding-top: 0;
 }
 
 .qInputTable .qInputTableRow label:last-of-type {
@@ -113,9 +124,12 @@ textarea {
     padding-left: 0.2em;
 }
 
+/* klasse fur einzelne attribute auf einer zeile */
 .qFullWidth {
     display: block !important;
     width: auto;
+
+    background-color: lightblue;
 }
 
 .qInputTable hr {
@@ -129,6 +143,8 @@ textarea {
 
 .qIllnesses {
     margin-bottom: 0.5em;
+
+    background-color: yellow;
 }
 
 .qIllnesses > .qColumn {
@@ -155,6 +171,15 @@ textarea {
 
 .qSpaceBelow {
     margin-bottom: 0.5em;
+}
+
+
+.qLineLeft {
+    float: left;
+    padding-right: 2em;
+
+    background-color: violet;
+
 }
 
 /*
