@@ -373,6 +373,21 @@
           </div>
         </label>
 
+         <div class="clearfix qRequired qInputTableRow">
+          <span>Soll der Pflege-<br>dienst weiter in Anspruch genommen werden?</span>
+          <div>
+            <label>
+              <input name="appointment" value="bis4" type="radio">
+              Ja
+            </label>
+         
+            <label>
+              <input name="appointment" value="bis7" type="radio">
+              Nein
+            </label>
+          </div> 
+        </div>
+
       </div>
     </div>
 
@@ -522,6 +537,11 @@
             Tumor
           </label>
 
+          <label class="qFullWidth">
+            <input type="checkbox" value="Weitere">
+            Weitere
+          </label>
+
         </div>
 
       </div>
@@ -593,126 +613,134 @@
           </div>
 -->
 
-          <div class="qColumn qInputTable small">
-            <div class="qInputTableRow clearfix">
-              <span>Kom&shy;mu&shy;ni&shy;ka&shy;tions&shy;ein&shy;schrän&shy;kung</span>
+          <div class="qCommunication">
 
-               <div>
-                <label class="qFullWidth">
-                  <input name="patient_illness" value="yes" type="checkbox" data-toggle="js-PatientEinschraenkungSehen">
-                  Sehvermögen
-                </label>
+            <div class="qColumn qInputTable small">
+              <div class="qInputTableRow clearfix">
+                <span>Kom&shy;mu&shy;ni&shy;ka&shy;tions&shy;ein&shy;schrän&shy;kung</span>
 
-                <label class="qFullWidth"> 
-                  <input name="patient_illness" value="no" type="checkbox" data-toggle="js-PatientEinschraenkungHoeren">
-                  Hörvermögen
-                </label>
+                 <div>
+                  <label class="qFullWidth">
+                    <input name="patient_illness" value="yes" type="checkbox" data-toggle="js-PatientEinschraenkungSehen">
+                    Sehvermögen
+                  </label>
 
-                <label class="qFullWidth">
-                  <input name="patient_illness" value="no" type="checkbox" data-toggle="js-PatientEinschraenkungSprechen">
-                  Sprachvermögen
-                </label>
+                  <label class="qFullWidth"> 
+                    <input name="patient_illness" value="no" type="checkbox" data-toggle="js-PatientEinschraenkungHoeren">
+                    Hörvermögen
+                  </label>
 
-              </div>
-            </div>  
-          </div>
+                  <label class="qFullWidth">
+                    <input name="patient_illness" value="no" type="checkbox" data-toggle="js-PatientEinschraenkungSprechen">
+                    Sprachvermögen
+                  </label>
 
-<!--
-        <div class="qLine qSpaceBelow">
-          <div class="qLineLeft">
-            <span>Leidet der Patient an ansteckenden Krankheiten?</span>
-          </div>
-            <label>
-              <input name="patient_illness" value="yes" type="radio" data-show="js-PatientAnsteckend">
-              Ja
-            </label>
-            <label>
-              <input name="patient_illness" value="no" type="radio" data-hide="js-PatientAnsteckend">
-              Nein
-            </label>
-            <div class="js-PatientAnsteckend qHidden">
-              <input placeholder="Krankheiten" type="text">
+                </div>
+              </div>  
             </div>
-        </div>
--->
 
-
-          <div class="qInputTableRow qHidden js-PatientEinschraenkungSehen">
+  <!-- 
+          <div class="qLine qSpaceBelow">
             <div class="qLineLeft">
-              <span>Sehvermögen</span>
+              <span>Leidet der Patient an ansteckenden Krankheiten?</span>
             </div>
-         
-              <div>
-                <label>
-                  <input type="radio" name="visionImpairment" value="teilweise">
-                  Teilweise eingeschränkt
-                </label>
-
-                <label>
-                  <input type="radio" name="visionImpairment" value="ganz">
-                  Ganz eingeschränkt
-                </label>
+              <label>
+                <input name="patient_illness" value="yes" type="radio" data-show="js-PatientAnsteckend">
+                Ja
+              </label>
+              <label>
+                <input name="patient_illness" value="no" type="radio" data-hide="js-PatientAnsteckend">
+                Nein
+              </label>
+              <div class="js-PatientAnsteckend qHidden">
+                <input placeholder="Krankheiten" type="text">
               </div>
           </div>
+  -->
+
+    <!-- <label class="qFullWidth"> deleted -->
+
+            <div class="clearfix">
+
+              <div class="qInputTableRow qHidden js-PatientEinschraenkungSehen">
+                <div class="qLineLeft">
+                  <span>Sehvermögen</span>
+                </div>
+             
+                  <div>
+                    <label>
+                      <input type="radio" name="visionImpairment" value="teilweise">
+                      Teilweise eingeschränkt
+                    </label>
+
+                    <label>
+                      <input type="radio" name="visionImpairment" value="ganz">
+                      Ganz eingeschränkt
+                    </label>
+                  </div>
+              </div>
 
 
-          <div class="qInputTableRow qHidden js-PatientEinschraenkungHoeren">
-             <div class="qLineLeft">
-                <span>Hörvermögen</span>
-             </div>
+              <div class="qInputTableRow qHidden js-PatientEinschraenkungHoeren">
+                 <div class="qLineLeft">
+                    <span>Hörvermögen</span>
+                 </div>
 
-            <div>
-              <label>
-                <input type="radio" name="hearingImpairment" value="teilweise">
-                Teilweise eingeschränkt
-              </label>
+                <div>
+                  <label>
+                    <input type="radio" name="hearingImpairment" value="teilweise">
+                    Teilweise eingeschränkt
+                  </label>
 
-              <label>
-                <input type="radio" name="hearingImpairment" value="ganz">
-                Ganz eingeschränkt
-              </label>
+                  <label>
+                    <input type="radio" name="hearingImpairment" value="ganz">
+                    Ganz eingeschränkt
+                  </label>
+                </div>
+              </div>
+
+
+              <div class="qInputTableRow qHidden js-PatientEinschraenkungSprechen">
+                <div class="qLineLeft">
+                  <span>Sprachvermögen</span>
+                </div>
+
+                <div>
+                  <label>
+                    <input type="radio" name="speachImpairment" value="teilweise">
+                    Teilweise eingeschränkt
+                  </label>
+
+                  <label>
+                    <input type="radio" name="speachImpairment" value="ganz">
+                    Ganz eingeschränkt
+                  </label>
+                </div>
+              </div>
+
             </div>
+
           </div>
 
-<!-- <label class="qFullWidth"> deleted -->
-
-          <div class="qInputTableRow qHidden js-PatientEinschraenkungSprechen">
-            <div class="qLineLeft">
-              <span>Sprachvermögen</span>
-            </div>
-
-            <div>
-              <label>
-                <input type="radio" name="speachImpairment" value="teilweise">
-                Teilweise eingeschränkt
-              </label>
-
-              <label>
-                <input type="radio" name="speachImpairment" value="ganz">
-                Ganz eingeschränkt
-              </label>
-            </div>
-          </div>
-        
 
           <div class="qColumn qInputTable small">
             <div class="qInputTableRow clearfix">
               <span>Bewegung</span>
                <div>
                 <label class="qFullWidth">
-                  <input name="patient_illness" value="yes" type="checkbox">
+                  <input name="patient_illness" value="yes" type="radio">
                   Selbstständig
                 </label>
                 <label class="qFullWidth"> 
-                  <input name="patient_illness" value="no" type="checkbox">
+                  <input name="patient_illness" value="no" type="radio">
                   Hilfe nötig
                 </label>
                 <label class="qFullWidth">
-                  <input name="patient_illness" value="no" type="checkbox">
+                  <input name="patient_illness" value="no" type="radio">
                   Überwiegend im Rollstuhl
                 </label>
                 <label class="qFullWidth">
-                  <input name="patient_illness" value="no" type="checkbox">
+                  <input name="patient_illness" value="no" type="radio">
                   Bettlägerig
                 </label>
               </div>
@@ -757,19 +785,19 @@
               <span>Körperpflege</span>
                <div>
                 <label class="qFullWidth">
-                  <input name="patient_illness" value="yes" type="checkbox">
+                  <input name="patient_illness" value="yes" type="radio">
                   Selbstständig
                 </label>
                 <label class="qFullWidth"> 
-                  <input name="patient_illness" value="no" type="checkbox">
+                  <input name="patient_illness" value="no" type="radio">
                   Unter Anleitung
                 </label>
                 <label class="qFullWidth">
-                  <input name="patient_illness" value="no" type="checkbox">
+                  <input name="patient_illness" value="no" type="radio">
                   Hilfe nötig
                 </label>
                 <label class="qFullWidth">
-                  <input name="patient_illness" value="no" type="checkbox">
+                  <input name="patient_illness" value="no" type="radio">
                   Komplette Unterstützung
                 </label>
               </div>
@@ -778,7 +806,7 @@
 
           <div class="qColumn qInputTable small">
             <div class="qInputTableRow clearfix">
-              <span>Hilfsmittel zur Bewegung</span>
+              <span>Hilfsmittel zur Körperpflege</span>
                <div>
                 <label class="qFullWidth">
                   <input name="patient_illness" value="yes" type="checkbox">
@@ -799,6 +827,61 @@
               </div>
             </div>  
           </div>
+
+
+          <div class="qColumn qInputTable small">
+            <div class="qInputTableRow clearfix">
+              <span>Toilettengang</span>
+               <div>
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="yes" type="radio">
+                  Selbstständig
+                </label>
+                <label class="qFullWidth"> 
+                  <input name="patient_illness" value="no" type="radio">
+                  Hilfe nötig
+                </label>
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="no" type="radio">
+                  Komplette Unterstützung
+                </label>
+              </div>
+            </div>  
+          </div>
+
+
+          <div class="qColumn qInputTable small">
+            <div class="qInputTableRow clearfix">
+              <span>Hilfsmittel zur Ausscheidung</span>
+               <div>
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="yes" type="checkbox">
+                  Blasenkatheter
+                </label>
+                <label class="qFullWidth"> 
+                  <input name="patient_illness" value="no" type="checkbox">
+                  Suprapubischer Katheter
+                </label>
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="no" type="checkbox">
+                  Urinflasche
+                </label>
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="no" type="checkbox">
+                  Windeln
+                </label>
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="no" type="checkbox">
+                  Vorlagen
+                </label>
+                <label class="qFullWidth">
+                  <input name="patient_illness" value="no" type="checkbox">
+                  Weitere
+                </label>
+              </div>
+            </div>  
+          </div>
+
 
 
         </div>
