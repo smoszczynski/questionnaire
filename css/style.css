@@ -191,7 +191,9 @@ textarea {
     background-color: pink;
 }
 
-
+.qColumnsInRow {
+    height: 6em;
+}
 
 /*
 @media (min-width: 65em) {
