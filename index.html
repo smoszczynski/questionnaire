@@ -1215,10 +1215,11 @@
       <div class="qColumn clearfix">
 
 
+
         <div class="qInputTable">
           <div class="clearfix qRequired qInputTableRow">
-            <span>Hilfe bei der Mobilität</span>
-            <div style="margin-bottom: 0.5em;">
+            <span>Hilfe bei der <br>Mobilität</span>
+            <div style="margin-left: 6em; margin-bottom: 0.5em;">
 
               <label class="qFullWidth">
                 <input type="checkbox" name="speachImpairment" value="teilweise">
@@ -1239,14 +1240,17 @@
                 <input type="checkbox" name="speachImpairment" value="ganz">
                 Begleitung zum Arzt / Behörden
               </label>
+
             </div>
           </div>
         </div>
 
+
+
         <div class="qInputTable">
           <div class="clearfix qRequired qInputTableRow">
-            <span>Hilfe bei der Ernährung</span>
-            <div style="margin-bottom: 0.5em;">
+            <span>Hilfe bei der <br>Ernährung</span>
+            <div style="margin-left: 6em; margin-bottom: 0.5em;">
 
               <label class="qFullWidth">
                 <input type="checkbox" name="speachImpairment" value="teilweise">
@@ -1257,14 +1261,17 @@
                 <input type="checkbox" name="speachImpairment" value="ganz">
                 Essen und Trinken verabreichen
               </label>
+
             </div>
           </div>
         </div>
 
+
+        
         <div class="qInputTable">
           <div class="clearfix qRequired qInputTableRow">
             <span>Sonstiges</span>
-            <div style="margin-bottom: 0.5em;">
+            <div style="margin-left: 6em; margin-bottom: 0.5em;">
 
               <label class="qFullWidth">
                 <input type="checkbox" name="speachImpairment" value="teilweise">
@@ -1275,11 +1282,15 @@
                 <input type="checkbox" name="speachImpairment" value="ganz">
                 Nächtliche Betreuung
               </label>
+
             </div>
           </div>
         </div>
 
+
       </div>
+
+
 
       <div class="qColumn clearfix">
 
@@ -1328,29 +1339,141 @@
         </div>
 
       </div>
+    </div>
 
-      <div class="qInputTableRow">
-          <div class="qFullWidth qLineLeft">
-            <span>Leidet der Patient an ansteckenden Krankheiten?</span>
-          </div>
+      <div class="qLine clearfix">
+        <div style="margin-top: 1em;" class="qLineLeft">
+          <span>Welche weitere Hilfe benötigt der Patient im Haushalt?
+          </span>
+          <div style="margin-bottom: 0.5em;">
             <label>
-              <input type="text" placeholder="Weitere Aufgaben">
+              <textarea name="qTextArea" rows="3" cols="10">Weitere Erwartungen</textarea>
             </label>
+          </div>
+        </div>
       </div>
 
 
 
+    <div class="clearfix qSection">
+    <h2>7. Umfeld und Arbeitsbedingungen der Betreuungskraft</h2>
+
+      <div class="qColumn clearfix">
+
+        <div class="qInputTable">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Wie soll der Freizeitausgleich der Betreuungskraft erfolgen?</span>
+            <div style="margin-bottom: 0.5em;">
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="teilweise">
+                2-3 Stunden pro Tag
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Ein Tag in der Woche
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Zwei halbe Tage in der Woche
+              </label>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="qColumn clearfix">
+
+        <div class="qInputTable">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Einkaufsmöglich-<br>keiten (zu Fuß)</span>
+            <div style="margin-bottom: 0.5em;">
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="teilweise">
+                Bis 5 Minuten
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Bis 10 Minuten
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                ≥ 15 Minuten
+              </label>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="qColumn clearfix">
+
+        <div class="qInputTable qLineLeft">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Wohnsituation</span>
+            <div style="margin-bottom: 0.5em;">
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="teilweise">
+                Wohnung
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Haus
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Weitere
+              </label>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="qInputTable clearfix qRequired qInputTableRow">
+
+          <div>
+            <label class="clearfix qRequired qInputTableRow">
+              <span>Haushaltsfläche <br>in m²</span>
+              <div>
+                <input type="text">
+              </div>
+            </label>
+          </div>
+        </div>
 
 
 
 
+        <div class="qInputTable clearfix qRequired qInputTableRow">
+          <span>Garten</span>
+          <div style="margin-bottom: 0.5em;">
 
+            <label>
+              <input type="checkbox" name="speachImpairment" value="teilweise">
+              Ja
+            </label>
 
-    </div>
+            <label>
+              <input type="checkbox" name="speachImpairment" value="ganz">
+              Nein
+            </label>
 
+          </div>
+        </div>
+      
 
-
-
+      </div>
 
 
 
