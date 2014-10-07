@@ -1451,27 +1451,89 @@
             </label>
           </div>
         </div>
-
-
-
-
-        <div class="qInputTable clearfix qRequired qInputTableRow">
-          <span>Garten</span>
-          <div style="margin-bottom: 0.5em;">
-
+      
+        <div class="qLine qSpaceBelow">
+          <div class="qLineLeft">
+            <span>Garten</span>
+          </div>
+          <div style="margin-left: 9em">
             <label>
-              <input type="checkbox" name="speachImpairment" value="teilweise">
+              <input name="patient_illness" value="yes" type="radio" data-show="js-PatientAnsteckend">
               Ja
             </label>
-
             <label>
-              <input type="checkbox" name="speachImpairment" value="ganz">
+              <input name="patient_illness" value="no" type="radio" data-hide="js-PatientAnsteckend">
               Nein
             </label>
+          </div>
+          <div class="js-PatientAnsteckend qHidden">
+            <input placeholder="Krankheiten" type="text">
+          </div>
+        </div>
 
+      </div>
+
+
+
+      <div class="qColumn clearfix qRequired qInputTableRow">
+
+        <div class="qLine qSpaceBelow">
+          <div class="qLineLeft">
+            <span>Haustiere</span>
+          </div>
+          <div style="margin-left: 9em">
+            <label>
+              <input name="patient_illness" value="yes" type="radio" data-show="js-PatientAnsteckend">
+              Ja
+            </label>
+            <label>
+              <input name="patient_illness" value="no" type="radio" data-hide="js-PatientAnsteckend">
+              Nein
+            </label>
+          </div>
+          <div class="js-PatientAnsteckend qHidden">
+            <input placeholder="Krankheiten" type="text">
+          </div>
+        </div>
+
+
+        <div class="qInputTable qLineLeft">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Wohnlage</span>
+            <div style="margin-bottom: 0.5em;">
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="teilweise">
+                Großstadt
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Kleinstadt
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Dorf
+              </label>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="qInputTable clearfix qRequired qInputTableRow">
+
+          <div>
+            <label class="clearfix qRequired qInputTableRow">
+              <span>Die nächsten größeren <br>Bahnhöfe</span>
+              <div>
+                <input type="text">
+              </div>
+            </label>
           </div>
         </div>
       
+        
 
       </div>
 
