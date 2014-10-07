@@ -1198,7 +1198,7 @@
           </span>
           <div style="margin-bottom: 0.5em;">
             <label>
-              <textarea name="qTextArea" rows="3" cols="10">Weitere Erwartungen</textarea>
+              <textarea name="qTextArea" rows="3" cols="10" placeholder="Weitere Erwartungen"></textarea>
             </label>
           </div>
         </div>
@@ -1341,17 +1341,17 @@
       </div>
     </div>
 
-      <div class="qLine clearfix">
-        <div style="margin-top: 1em;" class="qLineLeft">
-          <span>Welche weitere Hilfe benötigt der Patient im Haushalt?
-          </span>
-          <div style="margin-bottom: 0.5em;">
-            <label>
-              <textarea name="qTextArea" rows="3" cols="10">Weitere Erwartungen</textarea>
-            </label>
-          </div>
+    <div class="qLine clearfix">
+      <div style="margin-top: 1em;" class="qLineLeft">
+        <span>Welche weitere Hilfe benötigt der Patient im Haushalt?
+        </span>
+        <div style="margin-bottom: 0.5em;">
+          <label>
+            <textarea name="qTextArea" rows="3" cols="10" placeholder="Weitere Hilfe"></textarea>
+          </label>
         </div>
       </div>
+    </div>
 
 
 
@@ -1412,11 +1412,12 @@
           </div>
         </div>
       </div>
+    </div>
 
-
+    <div class="clearfix qSection">
       <div class="qColumn clearfix">
 
-        <div class="qInputTable qLineLeft">
+        <div class="qInputTable qLineLeft" style="padding-right: 0px;">
           <div class="clearfix qRequired qInputTableRow">
             <span>Wohnsituation</span>
             <div style="margin-bottom: 0.5em;">
@@ -1474,11 +1475,13 @@
       </div>
 
 
+ 
 
-      <div class="qColumn clearfix qRequired qInputTableRow">
 
-        <div class="qLine qSpaceBelow">
-          <div class="qLineLeft">
+      <div class="qColumn clearfix">
+
+        <div class="qLine qSpaceBelow qRequired">
+          <div class="clearfix qLineLeft">
             <span>Haustiere</span>
           </div>
           <div style="margin-left: 9em">
@@ -1497,7 +1500,7 @@
         </div>
 
 
-        <div class="qInputTable qLineLeft">
+        <div class="qInputTable qLineLeft" style="padding-right: 0px;">
           <div class="clearfix qRequired qInputTableRow">
             <span>Wohnlage</span>
             <div style="margin-bottom: 0.5em;">
@@ -1533,10 +1536,183 @@
           </div>
         </div>
       
-        
+      </div>
+    </div>
+
+    <div class="qSection">
+      <div class="qColumn clearfix">
+
+        <div class="qInputTable">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Unterkunft für die Betreuungskraft mit Ausstattung</span>
+            <div style="margin-bottom: 0.5em;">
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="teilweise">
+                Eigenes Apartment
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Eigenes Zimmer
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Eigenes Bad
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Bad zur Mitbenutzung
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Bett
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Tisch / Schreibtisch
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Schrank
+              </label>
+
+               <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Radio
+              </label>
+
+               <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                TV
+              </label>
+
+               <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Weitere
+              </label>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="qColumn clearfix">
+
+        <div class="qInputTable">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Kommunikations- möglichkeiten, die Sie der Betreuungs-<br>kraft zur Verfügung stellen können?</span>
+            <div style="margin-bottom: 0.5em;">
+
+              <label class="qFullWidth" style="margin-left:2em">
+                <input type="checkbox" name="speachImpairment" value="teilweise">
+                Festnetz bis 10 € im Monat
+              </label>
+
+              <label class="qFullWidth" style="margin-left:2em">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Festnetz mit Auslandsflatrate
+              </label>
+
+              <label class="qFullWidth" style="margin-left:2em">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Internet
+              </label>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="qInputTable">
+          <div class="clearfix qRequired qInputTableRow">
+            <span style="max-width:9em">Wie soll die Anfahrt der Betreuungskraft stattfinden, falls diese mit einem Reisebus nur bis zu der nächst größeren Stadt erfolgt?</span>
+            <div style="margin-bottom: 0.5em;">
+              <label class="qFullWidth" style="margin-left:2em">
+                <input type="radio" name="speachImpairment" value="teilweise">
+                Wird von einem Familien-<br>mitglied abgeholt
+              </label>
+
+              <label class="qFullWidth" style="margin-left:2em">
+                <input type="radio" name="speachImpairment" value="teilweise">
+                Mit einem Taxi
+              </label>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <div class="qSection clearfix">
+    <h2>8. Datenschutzerklärung</h2>
+
+      <div class="qColumn clearfix">
+
+
+
+        <div class="qInputTable">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Wie sind Sie auf Domaris Pflegevermittlung aufmerksam geworden?</span>
+            <div style="margin-bottom: 0.5em;">
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="teilweise">
+                Seniorenbüro
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Krankenhaus
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Familie / Bekannte
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Arzt
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Internet
+              </label>
+
+              <label class="qFullWidth">
+                <input type="checkbox" name="speachImpairment" value="ganz">
+                Weitere
+              </label>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="qLine clearfix">
+          <div style="margin-top: 1em;" class="qLineLeft">
+            <span>Sonstiges</span>
+            <div class="clearfix" style="margin-bottom: 0.5em;">
+              <label>
+                <textarea name="qTextArea" rows="3" cols="10" placeholder="Hier können Sie sonstige Angaben schreiben oder Fragen stellen, die noch Erklärung benötigen."></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+
 
       </div>
 
+     
 
 
 
