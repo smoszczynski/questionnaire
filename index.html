@@ -18,7 +18,7 @@
     <!-- Leistungen -->
   
     <div class="clearfix qSection">
-      <h2>Gewünschte Leistungen</h2>
+      <h2>1. Gewünschte Leistungen</h2>
 
       <div class="qColumn qInputTable">
         <div class="clearfix qRequired qInputTableRow">
@@ -81,7 +81,7 @@
     <div class="clearfix qSection">     
 
       <div class="qColumn qInputTable">
-        <h2>Angaben zur betreuenden Person</h2>
+        <h2>2. Angaben zur betreuenden Person</h2>
 
         <div class="clearfix qRequired qInputTableRow">
 
@@ -288,7 +288,7 @@
 
 
     <div class="clearfix qSection">
-      <h2>Pflegestufen und Pflegedienst</h2>
+      <h2>3. Pflegestufen und Pflegedienst</h2>
 
       <div class="qColumn qInputTable">
         <h3>Pflegestufe</h3>
@@ -402,7 +402,7 @@
  <!-- BEDARFSANALYSE -->  
 
     <div class="clearfix qSection">
-      <h2>Bedarfsanalyse</h2>
+      <h2>4. Bedarfsanalyse</h2>
 
       <h3>Diagnosen / Beschwerden</h3>
       <div class="clearfix qIllnesses">
@@ -783,21 +783,30 @@
             </div>
 
 
-              <div class="qInputTable small">
+
+            <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
-                <span>Toilettengang</span>
+                <span>Kau- und Schluckstörungen</span>
                  <div>
                   <label class="qFullWidth">
-                    <input name="patient_illness" value="yes" type="radio">
-                    Selbstständig
+                    <input name="patient_illness" value="yes" type="checkbox">
+                    Störungen
                   </label>
                   <label class="qFullWidth"> 
-                    <input name="patient_illness" value="no" type="radio">
-                    Hilfe nötig
+                    <input name="patient_illness" value="no" type="checkbox">
+                    Trinkkarenz
                   </label>
                   <label class="qFullWidth">
-                    <input name="patient_illness" value="no" type="radio">
-                    Komplette Unterstützung
+                    <input name="patient_illness" value="no" type="checkbox">
+                    Nahrungskarenz
+                  </label>
+                  <label class="qFullWidth">
+                    <input name="patient_illness" value="no" type="checkbox">
+                    PEG Sonde
+                  </label>
+                  <label class="qFullWidth">
+                    <input name="patient_illness" value="no" type="checkbox">
+                    Weitere
                   </label>
                 </div>
               </div>  
@@ -877,31 +886,19 @@
 
             <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
-                <span>Hilfsmittel zur Ausscheidung</span>
+                <span>Toilettengang</span>
                  <div>
                   <label class="qFullWidth">
-                    <input name="patient_illness" value="yes" type="checkbox">
-                    Blasenkatheter
+                    <input name="patient_illness" value="yes" type="radio">
+                    Selbstständig
                   </label>
                   <label class="qFullWidth"> 
-                    <input name="patient_illness" value="no" type="checkbox">
-                    Suprapubischer Katheter
+                    <input name="patient_illness" value="no" type="radio">
+                    Hilfe nötig
                   </label>
                   <label class="qFullWidth">
-                    <input name="patient_illness" value="no" type="checkbox">
-                    Urinflasche
-                  </label>
-                  <label class="qFullWidth">
-                    <input name="patient_illness" value="no" type="checkbox">
-                    Windeln
-                  </label>
-                  <label class="qFullWidth">
-                    <input name="patient_illness" value="no" type="checkbox">
-                    Vorlagen
-                  </label>
-                  <label class="qFullWidth">
-                    <input name="patient_illness" value="no" type="checkbox">
-                    Weitere
+                    <input name="patient_illness" value="no" type="radio">
+                    Komplette Unterstützung
                   </label>
                 </div>
               </div>  
@@ -960,26 +957,29 @@
               </div>
             </div>
 
-
-            <div class="qInputTable small">
+             <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
-                <span>Kau- und Schluckstörungen</span>
+                <span>Hilfsmittel zur Ausscheidung</span>
                  <div>
                   <label class="qFullWidth">
                     <input name="patient_illness" value="yes" type="checkbox">
-                    Störungen
+                    Blasenkatheter
                   </label>
                   <label class="qFullWidth"> 
                     <input name="patient_illness" value="no" type="checkbox">
-                    Trinkkarenz
+                    Suprapubischer Katheter
                   </label>
                   <label class="qFullWidth">
                     <input name="patient_illness" value="no" type="checkbox">
-                    Nahrungskarenz
+                    Urinflasche
                   </label>
                   <label class="qFullWidth">
                     <input name="patient_illness" value="no" type="checkbox">
-                    PEG Sonde
+                    Windeln
+                  </label>
+                  <label class="qFullWidth">
+                    <input name="patient_illness" value="no" type="checkbox">
+                    Vorlagen
                   </label>
                   <label class="qFullWidth">
                     <input name="patient_illness" value="no" type="checkbox">
@@ -988,6 +988,7 @@
                 </div>
               </div>  
             </div>
+            
 
           </div>
 
@@ -999,7 +1000,7 @@
       <!--  Anforderungen an das Personal -->
 
     <div class="clearfix qSection">
-    <h2>Anforderungen an das Personal</h2>
+    <h2>5. Anforderungen an das Personal</h2>
 
       <div class="qColumn">
 
@@ -1077,45 +1078,37 @@
           </div>
         </div>
 
-      </div>
 
-
-      <div class="qColumn clearfix">
-
-        <div class="qInputTable">
-          <div class="clearfix qRequired qInputTableRow">
-            <span>Raucher/-in</span>
-            <div style="margin-left: 6em; margin-bottom: 0.5em;">
-              <label class="qFullWidth">
-                <input type="radio" name="speachImpairment" value="teilweise">
-                Nichtraucher/in
-              </label>
-
-              <label class="qFullWidth">
-                <input type="radio" name="speachImpairment" value="ganz">
-                Keine Präferenz
-              </label>
-            </div>
-          </div>
-        </div>
+      
 
 
         <div class="qInputTable">
           <div class="clearfix qRequired qInputTableRow">
-            <span>Tierlieb</span>
-            <div style="margin-left: 6em; margin-bottom: 0.5em;">
+            <span>Führerschein</span>
+            <div style="margin-bottom: 0.5em;">
               <label class="qFullWidth">
                 <input type="radio" name="speachImpairment" value="teilweise">
                 Ja
               </label>
 
               <label class="qFullWidth">
+                <input type="radio" name="speachImpairment" value="teilweise">
+                Nein
+              </label>
+
+              <label class="qFullWidth">
                 <input type="radio" name="speachImpairment" value="ganz">
                 Keine Präferenz
               </label>
             </div>
           </div>
         </div>
+
+
+      </div>
+
+
+      <div class="qColumn clearfix">
 
 
         <div class="qInputTable">
@@ -1159,6 +1152,42 @@
           </div>
         </div>
 
+
+        <div class="qInputTable">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Raucher/-in</span>
+            <div style="margin-left: 6em; margin-bottom: 0.5em;">
+              <label class="qFullWidth">
+                <input type="radio" name="speachImpairment" value="teilweise">
+                Nichtraucher/in
+              </label>
+
+              <label class="qFullWidth">
+                <input type="radio" name="speachImpairment" value="ganz">
+                Keine Präferenz
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="qInputTable">
+          <div class="clearfix qRequired qInputTableRow">
+            <span>Tierlieb</span>
+            <div style="margin-left: 6em; margin-bottom: 0.5em;">
+              <label class="qFullWidth">
+                <input type="radio" name="speachImpairment" value="teilweise">
+                Ja
+              </label>
+
+              <label class="qFullWidth">
+                <input type="radio" name="speachImpairment" value="ganz">
+                Keine Präferenz
+              </label>
+            </div>
+          </div>
+        </div>
+
       </div>
        
 
@@ -1169,7 +1198,7 @@
           </span>
           <div style="margin-bottom: 0.5em;">
             <label>
-              <textarea name="qTextArea" rows="3" cols="20">Weitere Erwartungen</textarea>
+              <textarea name="qTextArea" rows="3" cols="10">Weitere Erwartungen</textarea>
             </label>
           </div>
         </div>
@@ -1181,7 +1210,7 @@
 <!-- Angaben zu Tätigkeiten der Betreuungskraft -->
 
     <div class="clearfix qSection">
-    <h2>Angaben zu Tätigkeiten der Betreuungskraft</h2>
+    <h2>6. Angaben zu Tätigkeiten der Betreuungskraft</h2>
 
       <div class="qColumn clearfix">
 
