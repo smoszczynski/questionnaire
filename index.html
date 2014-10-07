@@ -735,7 +735,8 @@
             <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
                 <span>Bewegung</span>
-                 <div>
+
+                 <div class="qColumnsInRow">
                   <label class="qFullWidth">
                     <input name="patient_illness" value="yes" type="radio">
                     Selbstständig
@@ -761,7 +762,8 @@
              <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
                 <span>Körperpflege</span>
-                 <div>
+
+                 <div class="qColumnsInRow">
                   <label class="qFullWidth">
                     <input name="patient_illness" value="yes" type="radio">
                     Selbstständig
@@ -787,7 +789,8 @@
             <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
                 <span>Kau- und Schluckstörungen</span>
-                 <div>
+
+                 <div class="qColumnsInRow"
                   <label class="qFullWidth">
                     <input name="patient_illness" value="yes" type="checkbox">
                     Störungen
@@ -821,7 +824,8 @@
             <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
                 <span>Hilfsmittel zur Bewegung</span>
-                 <div>
+
+                 <div class="qColumnsInRow">
                   <label class="qFullWidth">
                     <input name="patient_illness" value="yes" type="checkbox">
                     Transferlifter
@@ -861,7 +865,8 @@
             <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
                 <span>Hilfsmittel zur Körperpflege</span>
-                 <div>
+
+                 <div class="qColumnsInRow">
                   <label class="qFullWidth">
                     <input name="patient_illness" value="yes" type="checkbox">
                     Nachtstuhl
@@ -887,7 +892,8 @@
             <div class="qInputTable small">
               <div class="qInputTableRow clearfix">
                 <span>Toilettengang</span>
-                 <div>
+
+                 <div class="qColumnsInRow">
                   <label class="qFullWidth">
                     <input name="patient_illness" value="yes" type="radio">
                     Selbstständig
@@ -915,7 +921,7 @@
                 <span>Urininkontinenz</span>
               </div>
 
-              <div>
+              <div class="qColumnsInRow">
                 <label class="qFullWidth">
                   <input type="radio" name="speachImpairment" value="teilweise">
                   Ja
@@ -939,7 +945,7 @@
                 <span>Stuhlinkontinenz</span>
               </div>
 
-              <div>
+              <div class="qColumnsInRow">
                 <label class="qFullWidth">
                   <input type="radio" name="speachImpairment" value="teilweise">
                   Ja
@@ -957,10 +963,12 @@
               </div>
             </div>
 
-             <div class="qInputTable small">
+             <div class="qInputTable small"> 
               <div class="qInputTableRow clearfix">
                 <span>Hilfsmittel zur Ausscheidung</span>
-                 <div>
+
+                 <div class="qColumnsInRow">
+
                   <label class="qFullWidth">
                     <input name="patient_illness" value="yes" type="checkbox">
                     Blasenkatheter
@@ -1339,16 +1347,17 @@
         </div>
 
       </div>
-    </div>
 
-    <div class="qLine clearfix">
-      <div style="margin-top: 1em;" class="qLineLeft">
-        <span>Welche weitere Hilfe benötigt der Patient im Haushalt?
-        </span>
-        <div style="margin-bottom: 0.5em;">
-          <label>
-            <textarea name="qTextArea" rows="3" cols="10" placeholder="Weitere Hilfe"></textarea>
-          </label>
+
+      <div class="qLine clearfix qLineLeft">
+        <div style="margin-top: 1em;">
+          <span>Welche weitere Hilfe benötigt der Patient im Haushalt?
+          </span>
+          <div style="margin-bottom: 0.5em;">
+            <label>
+              <textarea name="qTextArea" rows="3" cols="10" placeholder="Weitere Hilfe"></textarea>
+            </label>
+          </div>
         </div>
       </div>
     </div>
@@ -1358,7 +1367,7 @@
     <div class="clearfix qSection">
     <h2>7. Umfeld und Arbeitsbedingungen der Betreuungskraft</h2>
 
-      <div class="qColumn clearfix">
+      <div class="qColumn">
 
         <div class="qInputTable">
           <div class="clearfix qRequired qInputTableRow">
@@ -1383,10 +1392,8 @@
             </div>
           </div>
         </div>
-      </div>
 
 
-      <div class="qColumn clearfix">
 
         <div class="qInputTable">
           <div class="clearfix qRequired qInputTableRow">
@@ -1411,12 +1418,80 @@
             </div>
           </div>
         </div>
+
+
+
+
+        <div class="qColumn clearfix">
+
+          <div class="qInputTable">
+            <div class="clearfix qRequired qInputTableRow">
+              <span>Unterkunft für die Betreuungskraft mit Ausstattung</span>
+              <div style="margin-bottom: 0.5em;">
+
+                <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="teilweise">
+                  Eigenes Apartment
+                </label>
+
+                <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  Eigenes Zimmer
+                </label>
+
+                <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  Eigenes Bad
+                </label>
+
+                <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  Bad zur Mitbenutzung
+                </label>
+
+                <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  Bett
+                </label>
+
+                <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  Tisch / Schreibtisch
+                </label>
+
+                <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  Schrank
+                </label>
+
+                 <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  Radio
+                </label>
+
+                 <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  TV
+                </label>
+
+                 <label class="qFullWidth">
+                  <input type="checkbox" name="speachImpairment" value="ganz">
+                  Weitere
+                </label>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
 
-      <div class="qColumn clearfix">
 
-        <div class="qInputTable qLineLeft" style="padding-right: 0px;">
+      <div class="qColumn" style="margin-right: 0px;">
+
+        <div class="qInputTable">
           <div class="clearfix qRequired qInputTableRow">
             <span>Wohnsituation</span>
             <div style="margin-bottom: 0.5em;">
@@ -1440,7 +1515,7 @@
           </div>
         </div>
 
-        <div class="qInputTable clearfix qRequired qInputTableRow">
+        <div class="qInputTable qRequired">
 
           <div>
             <label class="clearfix qRequired qInputTableRow">
@@ -1467,13 +1542,10 @@
             </label>
           </div>
           <div class="js-PatientAnsteckend qHidden">
-            <input placeholder="Krankheiten" type="text">
+            <input type="text">
           </div>
         </div>
-      </div>
 
-
-      <div class="qColumn clearfix">
 
         <div class="qLine qSpaceBelow qRequired">
           <div class="clearfix qLineLeft">
@@ -1494,8 +1566,7 @@
           </div>
         </div>
 
-
-        <div class="qInputTable qLineLeft" style="padding-right: 0px;">
+        <div class="qInputTable" style="padding-right: 0px;">
           <div class="clearfix qRequired qInputTableRow">
             <span>Wohnlage</span>
             <div style="margin-bottom: 0.5em;">
@@ -1519,6 +1590,7 @@
           </div>
         </div>
 
+
         <div class="qInputTable clearfix qRequired qInputTableRow">
 
           <div>
@@ -1530,72 +1602,11 @@
             </label>
           </div>
         </div>
-      
+
       </div>
 
 
- 
-      <div class="qColumn clearfix">
 
-        <div class="qInputTable">
-          <div class="clearfix qRequired qInputTableRow">
-            <span>Unterkunft für die Betreuungskraft mit Ausstattung</span>
-            <div style="margin-bottom: 0.5em;">
-
-              <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="teilweise">
-                Eigenes Apartment
-              </label>
-
-              <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                Eigenes Zimmer
-              </label>
-
-              <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                Eigenes Bad
-              </label>
-
-              <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                Bad zur Mitbenutzung
-              </label>
-
-              <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                Bett
-              </label>
-
-              <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                Tisch / Schreibtisch
-              </label>
-
-              <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                Schrank
-              </label>
-
-               <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                Radio
-              </label>
-
-               <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                TV
-              </label>
-
-               <label class="qFullWidth">
-                <input type="checkbox" name="speachImpairment" value="ganz">
-                Weitere
-              </label>
-
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div class="qColumn clearfix">
 
@@ -1692,8 +1703,11 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="qLine clearfix">
+      <div class="qColumn clearfix">
+
+        <div class="qColumn qLine">
           <div style="margin-top: 1em;" class="qLineLeft">
             <span>Sonstiges</span>
             <div class="clearfix" style="margin-bottom: 0.5em;">
